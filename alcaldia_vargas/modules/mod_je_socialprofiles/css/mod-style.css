@@ -1,0 +1,103 @@
+.pane-sliders .panel { border: none !important; }
+div.panel > h3 { height: 30px!important;padding:0!important; background: #fff!important; border: 1px solid #ccc; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; font: bold 18px/30px Arial, Helvetica, sans-serif}
+div.panel > h3 a { color: #333!important;}
+div.panel h3.pane-toggler-down{ background:#D5EEFF!important;border: 1px solid #A4CDE9!important; width:100%; height:100%}
+div.panel h3.pane-toggler-down a { color: #333!important; }
+.sub-heading {background:#D5EEFF!important;border: 1px solid #A4CDE9!important; color:#333!important;width:400px;  -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; font: bold 15px/30px Arial, Helvetica, sans-serif; display:block; padding:0 10px; text-align:left!important; margin:0 0 10px 0}
+.description {-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; font-weight:normal; border:1px solid #ccc; padding:10px; max-width:400px}
+.description p { padding:0; margin:0}
+.sub-heading span {color:#777}
+.pane-toggler span { padding: 10px 0 10px 20px !important;background:none!important; }
+.pane-toggler-down span { padding: 10px 0 10px 20px !important;background:none !important; }
+.pane-sliders .content { margin: 4px auto; width: 100%; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.pane-down {border: 1px solid #ccc !important;}
+.panel fieldset.panelform > ul > li > label { color: #444; font-size: 11px; font-weight: bold; height: 24px; line-height: 24px; padding: 0 20px 0 10px; text-align: right; max-width: 30%!important; min-width: 30%!important;}
+.panel fieldset.panelform > ul > li fieldset { line-height:28px; }
+fieldset.panelform input { height: 16px; color: #555; line-height: 16px; padding: 4px; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; width:250px; }
+fieldset.panelform select { height: 26px; color: #555; line-height: 24px; padding: 4px; font-size:11px; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;width:150px; }
+fieldset.panelform select[multiple=multiple] { height: auto!important}
+fieldset.panelform textarea {border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;width:250px;padding: 4px;}
+.fltrt ul.adminformlist li { overflow: hidden; border-bottom: 1px solid #eee; padding: 1px 10px; margin: 0; }
+.custom-tabs {background:#D5EEFF!important;border: 1px solid #A4CDE9!important;   -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; font-weight:bold; display:block; padding:0 10px}
+
+label[id^="jform_params_"], label[id*="jform_params_"] { font-weight:bold; text-align:right; width:150px}
+.credits { font-size:10px}
+
+span#Icon{width:24px;height:24px;margin:0 0 0 10px; text-indent:-9999px;background-image:url(../images/color_24.png); float:right}
+
+#Icon.Icon1{background-position: 0px 0px;}
+#Icon.Icon2{background-position: -24px 0px;}
+#Icon.Icon3{background-position: -48px 0px;}
+#Icon.Icon4{background-position: -72px 0px;}
+#Icon.Icon5{background-position: -96px 0px;}
+#Icon.Icon6{background-position: -120px 0px;}
+#Icon.Icon7{background-position: -144px 0px;}
+#Icon.Icon8{background-position: -168px 0px;}
+#Icon.Icon9{background-position: -192px 0px;}
+#Icon.Icon10{background-position: -216px 0px;} 
+
+#Icon.Icon11{background-position: 0px -24px;}
+#Icon.Icon12{background-position: -24px -24px;}
+#Icon.Icon13{background-position: -48px -24px;}
+#Icon.Icon14{background-position: -72px -24px;}
+#Icon.Icon15{background-position: -96px -24px;}
+#Icon.Icon16{background-position: -120px -24px;}
+#Icon.Icon17{background-position: -144px -24px;}
+#Icon.Icon18{background-position: -168px -24px;}
+#Icon.Icon19{background-position: -192px -24px;}
+#Icon.Icon20{background-position: -216px -24px;} 
+
+#Icon.Icon21{background-position: 0px -48px;}
+#Icon.Icon22{background-position: -24px -48px;}
+#Icon.Icon23{background-position: -48px -48px;}
+#Icon.Icon24{background-position: -72px -48px;}
+#Icon.Icon25{background-position: -96px -48px;}
+#Icon.Icon26{background-position: -120px -48px;}
+#Icon.Icon27{background-position: -144px -48px;}
+#Icon.Icon28{background-position: -168px -48px;}
+#Icon.Icon29{background-position: -192px -48px;}
+#Icon.Icon30{background-position: -216px -48px;} 
+
+#Icon.Icon31{background-position: 0px -72px;}
+#Icon.Icon32{background-position: -24px -72px;}
+#Icon.Icon33{background-position: -48px -72px;}
+#Icon.Icon34{background-position: -72px -72px;}
+#Icon.Icon35{background-position: -96px -72px;}
+#Icon.Icon36{background-position: -120px -72px;}
+#Icon.Icon37{background-position: -144px -72px;}
+#Icon.Icon38{background-position: -168px -72px;}
+#Icon.Icon39{background-position: -192px -72px;}
+#Icon.Icon40{background-position: -216px -72px;} 
+
+#Icon.Icon41{background-position: 0px -96px;}
+#Icon.Icon42{background-position: -24px -96px;}
+#Icon.Icon43{background-position: -48px -96px;}
+#Icon.Icon44{background-position: -72px -96px;}
+#Icon.Icon45{background-position: -96px -96px;}
+#Icon.Icon46{background-position: -120px -96px;}
+#Icon.Icon47{background-position: -144px -96px;}
+#Icon.Icon48{background-position: -168px -96px;}
+#Icon.Icon49{background-position: -192px -96px;}
+#Icon.Icon50{background-position: -216px -96px;} 
+
+#Icon.Icon51{background-position: 0px -120px;}
+#Icon.Icon52{background-position: -24px -120px;}
+#Icon.Icon53{background-position: -48px -120px;}
+#Icon.Icon54{background-position: -72px -120px;}
+#Icon.Icon55{background-position: -96px -120px;}
+#Icon.Icon56{background-position: -120px -120px;}
+#Icon.Icon57{background-position: -144px -120px;}
+#Icon.Icon58{background-position: -168px -120px;}
+#Icon.Icon59{background-position: -192px -120px;}
+#Icon.Icon60{background-position: -216px -120px;} 
+
+#Icon.Icon61{background-position: 0px -144px;}
+#Icon.Icon62{background-position: -24px -144px;}
+#Icon.Icon63{background-position: -48px -144px;}
+#Icon.Icon64{background-position: -72px -144px;}
+#Icon.Icon65{background-position: -96px -144px;}
+#Icon.Icon66{background-position: -120px -144px;}
+#Icon.Icon67{background-position: -144px -144px;}
+#Icon.Icon68{background-position: -168px -144px;}
+#Icon.Icon69{background-position: -192px -144px;}
+#Icon.Icon70{background-position: -216px -144px;} 

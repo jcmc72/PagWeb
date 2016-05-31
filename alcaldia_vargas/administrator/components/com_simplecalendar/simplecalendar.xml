@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>com_simplecalendar</name>
+	<author>Fabrizio Albonico</author>
+	<creationDate>October 3, 2013</creationDate>
+	<copyright>(C) 2009 - 2013 Fabrizio Albonico. All rights reserved.</copyright>
+	<license>GNU General Public License version 3; see	LICENSE.txt</license>
+	<authorEmail>software@albonico.ch</authorEmail>
+	<authorUrl>software.albonico.ch</authorUrl>
+	<version>3.0.10</version>
+	<description>COM_SIMPLECALENDAR_XML_DESCRIPTION</description>
+
+	<installfile>install.simplecalendar.php</installfile>
+
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update> <!-- Runs on update; New in 2.5 -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<files folder="site">
+		<filename>simplecalendar.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>language</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+	<administration>
+		<menu img="class:simplecalendar">COM_SIMPLECALENDAR</menu>
+		<submenu>
+			<!--
+				Note that all & must be escaped to &amp; for the file to be valid
+				XML and be parsed by the installer
+			-->
+			<menu 
+				link="option=com_simplecalendar" 
+				img="class:simplecalendar" 
+				alt="SimpleCalendar/Calendar"
+			>
+				COM_SIMPLECALENDAR_SUBMENU_CALENDAR
+			</menu>
+			<menu 
+				link="option=com_categories&amp;extension=com_simplecalendar"
+				img="class:simplecalendar-categories"
+				alt="SimpleCalendar/Categories"
+			>
+				COM_SIMPLECALENDAR_SUBMENU_CATEGORIES
+			</menu>
+			<menu
+				link="option=com_simplecalendar&amp;view=organizers" 
+				img="class:simplecalendar-organizers"
+				alt="SimpleCalendar/Organizers"
+			>
+				COM_SIMPLECALENDAR_SUBMENU_ORGANIZERS
+			</menu>
+			<menu
+				link="option=com_simplecalendar&amp;view=statuses" 
+				img="class:simplecalendar-statuses"
+				alt="SimpleCalendar/Statuses"
+			>
+				COM_SIMPLECALENDAR_SUBMENU_STATUSES
+			</menu>
+			<menu 
+				link="option=com_config&amp;com_config&amp;view=component&amp;component=com_simplecalendar" 
+				img="class:simplecalendar-settings"
+				alt="SimpleCalendar/Settings"
+			>
+				COM_SIMPLECALENDAR_SUBMENU_SETTINGS
+			</menu>
+		</submenu>
+		
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>simplecalendar.php</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>LICENSE.txt</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>language</folder>
+			<folder>models</folder>
+			<folder>plugins</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		
+		<languages folder="admin">
+			<language tag="cs-CZ">language/cs-CZ/cs-CZ.com_simplecalendar.ini</language>
+			<language tag="cs-CZ">language/cs-CZ/cs-CZ.com_simplecalendar.sys.ini</language>
+			<language tag="de-DE">language/de-DE/de-DE.com_simplecalendar.ini</language>
+			<language tag="de-DE">language/de-DE/de-DE.com_simplecalendar.sys.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_simplecalendar.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_simplecalendar.sys.ini</language>
+			<language tag="fr-FR">language/fr-FR/fr-FR.com_simplecalendar.ini</language>
+			<language tag="fr-FR">language/fr-FR/fr-FR.com_simplecalendar.sys.ini</language>
+			<language tag="it-IT">language/it-IT/it-IT.com_simplecalendar.ini</language>
+			<language tag="it-IT">language/it-IT/it-IT.com_simplecalendar.sys.ini</language>
+			<language tag="nl-NL">language/nl-NL/nl-NL.com_simplecalendar.ini</language>
+			<language tag="nl-NL">language/nl-NL/nl-NL.com_simplecalendar.sys.ini</language>
+			<language tag="sv-SE">language/sv-SE/sv-SE.com_simplecalendar.ini</language>
+			<language tag="sv-SE">language/sv-SE/sv-SE.com_simplecalendar.sys.ini</language>
+		</languages>
+		
+	</administration>
+	
+	<updateservers>
+		<server type="extension" priority="1" name="SimpleCalendar Updates">http://software.albonico.ch/component/simplevalidate?view=update&amp;format=xml&amp;id=1</server>
+	</updateservers>
+</extension>

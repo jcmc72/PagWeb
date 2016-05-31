@@ -1,0 +1,1 @@
+ALTER TABLE #__simplecalendar MODIFY COLUMN description MEDIUMTEXT;

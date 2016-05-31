@@ -1,0 +1,251 @@
+#je_socialicons ul{list-style:none;padding:0!important; margin:0!important;}
+#je_socialicons ul li {float:none; display:inline-block; margin:0!important; padding:0!important;}
+#je_socialicons ul li a{display:block;width:100%;height:100%; margin:0; padding:0}
+
+.hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;}
+.input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.tooltip{position:absolute;z-index:1030;display:block;visibility:visible;font-size:11px;line-height:1.4;opacity:0;filter:alpha(opacity=0);}.tooltip.in{opacity:0.9;filter:alpha(opacity=90);}
+.tooltip.top{margin-top:-3px;padding:5px 0;}
+.tooltip.right{margin-left:3px;padding:0 5px;}
+.tooltip.bottom{margin-top:3px;padding:5px 0;}
+.tooltip.left{margin-left:-3px;padding:0 5px;}
+.tooltip-inner{max-width:200px;padding:8px;color:#ffffff;text-align:center;text-decoration:none;background-color:#000000;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+.tooltip-arrow{position:absolute;width:0;height:0;border-color:transparent;border-style:solid;}
+.tooltip.top .tooltip-arrow{bottom:0;left:50%;margin-left:-5px;border-width:5px 5px 0;border-top-color:#000000;}
+.tooltip.right .tooltip-arrow{top:50%;left:0;margin-top:-5px;border-width:5px 5px 5px 0;border-right-color:#000000;}
+.tooltip.left .tooltip-arrow{top:50%;right:0;margin-top:-5px;border-width:5px 0 5px 5px;border-left-color:#000000;}
+.tooltip.bottom .tooltip-arrow{top:0;left:50%;margin-left:-5px;border-width:0 5px 5px;border-bottom-color:#000000;}
+
+/* 32x32 Icons */
+#je_socialicons .je_social_32 a.icon1{background-position: 0px 0px;}
+#je_socialicons .je_social_32 a.icon2{background-position: -32px 0px;}
+#je_socialicons .je_social_32 a.icon3{background-position: -64px 0px;}
+#je_socialicons .je_social_32 a.icon4{background-position: -96px 0px;}
+#je_socialicons .je_social_32 a.icon5{background-position: -128px 0px;}
+#je_socialicons .je_social_32 a.icon6{background-position: -160px 0px;}
+#je_socialicons .je_social_32 a.icon7{background-position: -192px 0px;}
+#je_socialicons .je_social_32 a.icon8{background-position: -224px 0px;}
+#je_socialicons .je_social_32 a.icon9{background-position: -256px 0px;}
+#je_socialicons .je_social_32 a.icon10{background-position: -288px 0px;}
+
+#je_socialicons .je_social_32 a.icon11{background-position: 0px -32px;}
+#je_socialicons .je_social_32 a.icon12{background-position: -32px -32px;}
+#je_socialicons .je_social_32 a.icon13{background-position: -64px -32px;}
+#je_socialicons .je_social_32 a.icon14{background-position: -96px -32px;}
+#je_socialicons .je_social_32 a.icon15{background-position: -128px -32px;}
+#je_socialicons .je_social_32 a.icon16{background-position: -160px -32px;}
+#je_socialicons .je_social_32 a.icon17{background-position: -192px -32px;}
+#je_socialicons .je_social_32 a.icon18{background-position: -224px -32px;}
+#je_socialicons .je_social_32 a.icon19{background-position: -256px -32px;}
+#je_socialicons .je_social_32 a.icon20{background-position: -288px -32px;}
+
+#je_socialicons .je_social_32 a.icon21{background-position: 0px -64px;}
+#je_socialicons .je_social_32 a.icon22{background-position: -32px -64px;}
+#je_socialicons .je_social_32 a.icon23{background-position: -64px -64px;}
+#je_socialicons .je_social_32 a.icon24{background-position: -96px -64px;}
+#je_socialicons .je_social_32 a.icon25{background-position: -128px -64px;}
+#je_socialicons .je_social_32 a.icon26{background-position: -160px -64px;}
+#je_socialicons .je_social_32 a.icon27{background-position: -192px -64px;}
+#je_socialicons .je_social_32 a.icon28{background-position: -224px -64px;}
+#je_socialicons .je_social_32 a.icon29{background-position: -256px -64px;}
+#je_socialicons .je_social_32 a.icon30{background-position: -288px -64px;}
+
+#je_socialicons .je_social_32 a.icon31{background-position: 0px -96px;}
+#je_socialicons .je_social_32 a.icon32{background-position: -32px -96px;}
+#je_socialicons .je_social_32 a.icon33{background-position: -64px -96px;}
+#je_socialicons .je_social_32 a.icon34{background-position: -96px -96px;}
+#je_socialicons .je_social_32 a.icon35{background-position: -128px -96px;}
+#je_socialicons .je_social_32 a.icon36{background-position: -160px -96px;}
+#je_socialicons .je_social_32 a.icon37{background-position: -192px -96px;}
+#je_socialicons .je_social_32 a.icon38{background-position: -224px -96px;}
+#je_socialicons .je_social_32 a.icon39{background-position: -256px -96px;}
+#je_socialicons .je_social_32 a.icon40{background-position: -288px -96px;}
+
+#je_socialicons .je_social_32 a.icon41{background-position: 0px -128px;}
+#je_socialicons .je_social_32 a.icon42{background-position: -32px -128px;}
+#je_socialicons .je_social_32 a.icon43{background-position: -64px -128px;}
+#je_socialicons .je_social_32 a.icon44{background-position: -96px -128px;}
+#je_socialicons .je_social_32 a.icon45{background-position: -128px -128px;}
+#je_socialicons .je_social_32 a.icon46{background-position: -160px -128px;}
+#je_socialicons .je_social_32 a.icon47{background-position: -192px -128px;}
+#je_socialicons .je_social_32 a.icon48{background-position: -224px -128px;}
+#je_socialicons .je_social_32 a.icon49{background-position: -256px -128px;}
+#je_socialicons .je_social_32 a.icon50{background-position: -288px -128px;}
+
+#je_socialicons .je_social_32 a.icon51{background-position: 0px -160px;}
+#je_socialicons .je_social_32 a.icon52{background-position: -32px -160px;}
+#je_socialicons .je_social_32 a.icon53{background-position: -64px -160px;}
+#je_socialicons .je_social_32 a.icon54{background-position: -96px -160px;}
+#je_socialicons .je_social_32 a.icon55{background-position: -128px -160px;}
+#je_socialicons .je_social_32 a.icon56{background-position: -160px -160px;}
+#je_socialicons .je_social_32 a.icon57{background-position: -192px -160px;}
+#je_socialicons .je_social_32 a.icon58{background-position: -224px -160px;}
+#je_socialicons .je_social_32 a.icon59{background-position: -256px -160px;}
+#je_socialicons .je_social_32 a.icon60{background-position: -288px -160px;}
+
+#je_socialicons .je_social_32 a.icon61{background-position: 0px -192px;}
+#je_socialicons .je_social_32 a.icon62{background-position: -32px -192px;}
+#je_socialicons .je_social_32 a.icon63{background-position: -64px -192px;}
+#je_socialicons .je_social_32 a.icon64{background-position: -96px -192px;}
+#je_socialicons .je_social_32 a.icon65{background-position: -128px -192px;}
+#je_socialicons .je_social_32 a.icon66{background-position: -160px -192px;}
+#je_socialicons .je_social_32 a.icon67{background-position: -192px -192px;}
+#je_socialicons .je_social_32 a.icon68{background-position: -224px -192px;}
+#je_socialicons .je_social_32 a.icon69{background-position: -256px -192px;}
+#je_socialicons .je_social_32 a.icon70{background-position: -288px -192px;}
+
+/* 24x24 Icons */
+#je_socialicons .je_social_24 a.icon1{background-position: 0px 0px;}
+#je_socialicons .je_social_24 a.icon2{background-position: -24px 0px;}
+#je_socialicons .je_social_24 a.icon3{background-position: -48px 0px;}
+#je_socialicons .je_social_24 a.icon4{background-position: -72px 0px;}
+#je_socialicons .je_social_24 a.icon5{background-position: -96px 0px;}
+#je_socialicons .je_social_24 a.icon6{background-position: -120px 0px;}
+#je_socialicons .je_social_24 a.icon7{background-position: -144px 0px;}
+#je_socialicons .je_social_24 a.icon8{background-position: -168px 0px;}
+#je_socialicons .je_social_24 a.icon9{background-position: -192px 0px;}
+#je_socialicons .je_social_24 a.icon10{background-position: -216px 0px;} 
+
+#je_socialicons .je_social_24 a.icon11{background-position: 0px -24px;}
+#je_socialicons .je_social_24 a.icon12{background-position: -24px -24px;}
+#je_socialicons .je_social_24 a.icon13{background-position: -48px -24px;}
+#je_socialicons .je_social_24 a.icon14{background-position: -72px -24px;}
+#je_socialicons .je_social_24 a.icon15{background-position: -96px -24px;}
+#je_socialicons .je_social_24 a.icon16{background-position: -120px -24px;}
+#je_socialicons .je_social_24 a.icon17{background-position: -144px -24px;}
+#je_socialicons .je_social_24 a.icon18{background-position: -168px -24px;}
+#je_socialicons .je_social_24 a.icon19{background-position: -192px -24px;}
+#je_socialicons .je_social_24 a.icon20{background-position: -216px -24px;} 
+
+#je_socialicons .je_social_24 a.icon21{background-position: 0px -48px;}
+#je_socialicons .je_social_24 a.icon22{background-position: -24px -48px;}
+#je_socialicons .je_social_24 a.icon23{background-position: -48px -48px;}
+#je_socialicons .je_social_24 a.icon24{background-position: -72px -48px;}
+#je_socialicons .je_social_24 a.icon25{background-position: -96px -48px;}
+#je_socialicons .je_social_24 a.icon26{background-position: -120px -48px;}
+#je_socialicons .je_social_24 a.icon27{background-position: -144px -48px;}
+#je_socialicons .je_social_24 a.icon28{background-position: -168px -48px;}
+#je_socialicons .je_social_24 a.icon29{background-position: -192px -48px;}
+#je_socialicons .je_social_24 a.icon30{background-position: -216px -48px;}
+
+#je_socialicons .je_social_24 a.icon31{background-position: 0px -72px;}
+#je_socialicons .je_social_24 a.icon32{background-position: -24px -72px;}
+#je_socialicons .je_social_24 a.icon33{background-position: -48px -72px;}
+#je_socialicons .je_social_24 a.icon34{background-position: -72px -72px;}
+#je_socialicons .je_social_24 a.icon35{background-position: -96px -72px;}
+#je_socialicons .je_social_24 a.icon36{background-position: -120px -72px;}
+#je_socialicons .je_social_24 a.icon37{background-position: -144px -72px;}
+#je_socialicons .je_social_24 a.icon38{background-position: -168px -72px;}
+#je_socialicons .je_social_24 a.icon39{background-position: -192px -72px;}
+#je_socialicons .je_social_24 a.icon40{background-position: -216px -72px;}
+
+#je_socialicons .je_social_24 a.icon41{background-position: 0px -96px;}
+#je_socialicons .je_social_24 a.icon42{background-position: -24px -96px;}
+#je_socialicons .je_social_24 a.icon43{background-position: -48px -96px;}
+#je_socialicons .je_social_24 a.icon44{background-position: -72px -96px;}
+#je_socialicons .je_social_24 a.icon45{background-position: -96px -96px;}
+#je_socialicons .je_social_24 a.icon46{background-position: -120px -96px;}
+#je_socialicons .je_social_24 a.icon47{background-position: -144px -96px;}
+#je_socialicons .je_social_24 a.icon48{background-position: -168px -96px;}
+#je_socialicons .je_social_24 a.icon49{background-position: -192px -96px;}
+#je_socialicons .je_social_24 a.icon50{background-position: -216px -96px;} 
+
+#je_socialicons .je_social_24 a.icon51{background-position: 0px -120px;}
+#je_socialicons .je_social_24 a.icon52{background-position: -24px -120px;}
+#je_socialicons .je_social_24 a.icon53{background-position: -48px -120px;}
+#je_socialicons .je_social_24 a.icon54{background-position: -72px -120px;}
+#je_socialicons .je_social_24 a.icon55{background-position: -96px -120px;}
+#je_socialicons .je_social_24 a.icon56{background-position: -120px -120px;}
+#je_socialicons .je_social_24 a.icon57{background-position: -144px -120px;}
+#je_socialicons .je_social_24 a.icon58{background-position: -168px -120px;}
+#je_socialicons .je_social_24 a.icon59{background-position: -192px -120px;}
+#je_socialicons .je_social_24 a.icon60{background-position: -216px -120px;} 
+
+#je_socialicons .je_social_24 a.icon61{background-position: 0px -144px;}
+#je_socialicons .je_social_24 a.icon62{background-position: -24px -144px;}
+#je_socialicons .je_social_24 a.icon63{background-position: -48px -144px;}
+#je_socialicons .je_social_24 a.icon64{background-position: -72px -144px;}
+#je_socialicons .je_social_24 a.icon65{background-position: -96px -144px;}
+#je_socialicons .je_social_24 a.icon66{background-position: -120px -144px;}
+#je_socialicons .je_social_24 a.icon67{background-position: -144px -144px;}
+#je_socialicons .je_social_24 a.icon68{background-position: -168px -144px;}
+#je_socialicons .je_social_24 a.icon69{background-position: -192px -144px;}
+#je_socialicons .je_social_24 a.icon70{background-position: -216px -144px;} 
+
+/* 16x16 Icons */
+#je_socialicons .je_social_16 a.icon1{background-position: 0px 0px;}
+#je_socialicons .je_social_16 a.icon2{background-position: -16px 0px;}
+#je_socialicons .je_social_16 a.icon3{background-position: -32px 0px;}
+#je_socialicons .je_social_16 a.icon4{background-position: -48px 0px;}
+#je_socialicons .je_social_16 a.icon5{background-position: -64px 0px;}
+#je_socialicons .je_social_16 a.icon6{background-position: -80px 0px;}
+#je_socialicons .je_social_16 a.icon7{background-position: -96px 0px;}
+#je_socialicons .je_social_16 a.icon8{background-position: -112px 0px;}
+#je_socialicons .je_social_16 a.icon9{background-position: -128px 0px;}
+#je_socialicons .je_social_16 a.icon10{background-position: -144px 0px;}  
+
+#je_socialicons .je_social_16 a.icon11{background-position: 0px -16px;}
+#je_socialicons .je_social_16 a.icon12{background-position: -16px -16px;}
+#je_socialicons .je_social_16 a.icon13{background-position: -32px -16px;}
+#je_socialicons .je_social_16 a.icon14{background-position: -48px -16px;}
+#je_socialicons .je_social_16 a.icon15{background-position: -64px -16px;}
+#je_socialicons .je_social_16 a.icon16{background-position: -80px -16px;}
+#je_socialicons .je_social_16 a.icon17{background-position: -96px -16px;}
+#je_socialicons .je_social_16 a.icon18{background-position: -112px -16px;}
+#je_socialicons .je_social_16 a.icon19{background-position: -128px -16px;}
+#je_socialicons .je_social_16 a.icon20{background-position: -144px -16px;} 
+
+#je_socialicons .je_social_16 a.icon21{background-position: 0px -32px;}
+#je_socialicons .je_social_16 a.icon22{background-position: -16px -32px;}
+#je_socialicons .je_social_16 a.icon23{background-position: -32px -32px;}
+#je_socialicons .je_social_16 a.icon24{background-position: -48px -32px;}
+#je_socialicons .je_social_16 a.icon25{background-position: -64px -32px;}
+#je_socialicons .je_social_16 a.icon26{background-position: -80px -32px;}
+#je_socialicons .je_social_16 a.icon27{background-position: -96px -32px;}
+#je_socialicons .je_social_16 a.icon28{background-position: -112px -32px;}
+#je_socialicons .je_social_16 a.icon29{background-position: -128px -32px;}
+#je_socialicons .je_social_16 a.icon30{background-position: -144px -32px;} 
+
+#je_socialicons .je_social_16 a.icon31{background-position: 0px -48px;}
+#je_socialicons .je_social_16 a.icon32{background-position: -16px -48px;}
+#je_socialicons .je_social_16 a.icon33{background-position: -32px -48px;}
+#je_socialicons .je_social_16 a.icon34{background-position: -48px -48px;}
+#je_socialicons .je_social_16 a.icon35{background-position: -64px -48px;}
+#je_socialicons .je_social_16 a.icon36{background-position: -80px -48px;}
+#je_socialicons .je_social_16 a.icon37{background-position: -96px -48px;}
+#je_socialicons .je_social_16 a.icon38{background-position: -112px -48px;}
+#je_socialicons .je_social_16 a.icon39{background-position: -128px -48px;}
+#je_socialicons .je_social_16 a.icon40{background-position: -144px -48px;} 
+
+#je_socialicons .je_social_16 a.icon41{background-position: 0px -64px;}
+#je_socialicons .je_social_16 a.icon42{background-position: -16px -64px;}
+#je_socialicons .je_social_16 a.icon43{background-position: -32px -64px;}
+#je_socialicons .je_social_16 a.icon44{background-position: -48px -64px;}
+#je_socialicons .je_social_16 a.icon45{background-position: -64px -64px;}
+#je_socialicons .je_social_16 a.icon46{background-position: -80px -64px;}
+#je_socialicons .je_social_16 a.icon47{background-position: -96px -64px;}
+#je_socialicons .je_social_16 a.icon48{background-position: -112px -64px;}
+#je_socialicons .je_social_16 a.icon49{background-position: -128px -64px;}
+#je_socialicons .je_social_16 a.icon50{background-position: -144px -64px;}
+
+#je_socialicons .je_social_16 a.icon51{background-position: 0px -80px;}
+#je_socialicons .je_social_16 a.icon52{background-position: -16px -80px;}
+#je_socialicons .je_social_16 a.icon53{background-position: -32px -80px;}
+#je_socialicons .je_social_16 a.icon54{background-position: -48px -80px;}
+#je_socialicons .je_social_16 a.icon55{background-position: -64px -80px;}
+#je_socialicons .je_social_16 a.icon56{background-position: -80px -80px;}
+#je_socialicons .je_social_16 a.icon57{background-position: -96px -80px;}
+#je_socialicons .je_social_16 a.icon58{background-position: -112px -80px;}
+#je_socialicons .je_social_16 a.icon59{background-position: -128px -80px;}
+#je_socialicons .je_social_16 a.icon60{background-position: -144px -80px;}
+
+#je_socialicons .je_social_16 a.icon61{background-position: 0px -96px;}
+#je_socialicons .je_social_16 a.icon62{background-position: -16px -96px;}
+#je_socialicons .je_social_16 a.icon63{background-position: -32px -96px;}
+#je_socialicons .je_social_16 a.icon64{background-position: -48px -96px;}
+#je_socialicons .je_social_16 a.icon65{background-position: -64px -96px;}
+#je_socialicons .je_social_16 a.icon66{background-position: -80px -96px;}
+#je_socialicons .je_social_16 a.icon67{background-position: -96px -96px;}
+#je_socialicons .je_social_16 a.icon68{background-position: -112px -96px;}
+#je_socialicons .je_social_16 a.icon69{background-position: -128px -96px;}
+#je_socialicons .je_social_16 a.icon70{background-position: -144px -96px;}

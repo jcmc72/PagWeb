@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	  type="module"
+	  version="1.1"
+	  client="site"
+	  method="upgrade">
+	<name>joombig featured content slideshow</name> 
+	<author>joombig.com</author> 
+	<creationDate>2014-04-18</creationDate> 
+	<copyright>(C) 2013 All rights reserved by joombig.com</copyright> 
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license> 
+	<authorEmail>admin@joombig.com</authorEmail> 
+	<authorUrl>http://www.joombig.com</authorUrl> 
+	<version>1.1</version> 
+	  <description>FEATURED_CONTENT_SLIDESHOW_DESC</description>
+
+	<files>
+		<filename module="mod_joombig_featured_content_slideshow">mod_joombig_featured_content_slideshow.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_joombig_featured_content_slideshow.xml</filename>
+		<folder>assets</folder>
+		<folder>elements</folder>
+		<folder>language</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_joombig_featured_content_slideshow.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_joombig_featured_content_slideshow/elements">
+			<fieldset name="basic">
+				<field type="loader" />
+                <field name="style_view" type="list" default="0" label="Style" description="Select style">
+				        <option value="0">Style 1</option>
+						<option value="1">Style 2</option>
+				</field>
+				<field name="moduleWidth" type="text" default="100" label="LABEL MODULE WIDTH" description="DESC MODULE WIDTH" />
+				<field name="moduleHeight" type="text" default="45.5" label="Height of module(% follow width of module)" description="Height of module(% follow width of module)" />
+                <field name="autoplay" type="radio" default="1" label="Autoplay" description="Select Yes/No">
+				        <option value="1">Yes</option>
+						<option value="0">No</option>
+				</field>
+				<field name="pausetime" type="text" default="5000" label="Pause time" description="Input pause time" />
+                <field name="display_title" type="radio" default="1" label="Show/Hide title(on images)" description="Select Show/Hide">
+				        <option value="1">Show</option>
+						<option value="0">Hide</option>
+				</field>
+                <field name="display_des" type="radio" default="1" label="Show/Hide description(on images)" description="Select Show/Hide">
+				        <option value="1">Show</option>
+						<option value="0">Hide</option>
+				</field>
+                <field name="display_readmore" type="radio" default="1" label="Show/Hide read more" description="Select Show/Hide">
+				        <option value="1">Show</option>
+						<option value="0">Hide</option>
+				</field>
+                <field name="enable_jQuery" type="radio" default="1" label="Enable/Disable jQuery" description="Select Enable/Disable">
+				        <option value="1">Enable</option>
+						<option value="0">Disable</option>
+				</field>
+                <field name="enable_jQuery_ui" type="radio" default="1" label="Enable/Disable jQuery-UI" description="Select Enable/Disable">
+				        <option value="1">Enable</option>
+						<option value="0">Disable</option>
+				</field>
+                <field name="auto_load" type="list" default="1" label="Enable/Disable auto load page" description="Select Enable/Disable">
+				        <option value="1">Enable</option>
+						<option value="0">Disable</option>
+				</field>
+			</fieldset>
+			<fieldset name="image1" label="LABEL IMAGE1">
+				<field name="image1" type="media" default="" label="LABEL IMAGE" description="DESC IMAGE" />
+				<field name="imagethumb1" type="media" default="" label="LABEL IMAGE THUMB" description="DESC IMAGE THUMB" />
+				<field name="title1" type="text" default="" label="LABEL HEADING" description="DESC HEADING" />
+				<field name="info1" type="textarea" cols="50" rows="4" filter="raw" default="" label="LABEL INFO" description="DESC INFO" />
+				<field name="inforight1" type="textarea" cols="50" rows="4" filter="raw" default="" label="Info right" description="Info right" />
+				<field name="readmorelink1" type="text" default="http://" label="LABEL READMORE LINK" description="DESC READMORE LINK" />
+				<field name="readmoretext1" type="text" default="read more" label="Readmore text" description="Readmore text" />
+			</fieldset>
+			<fieldset name="image2" label="LABEL IMAGE2">
+				<field name="image2" type="media" default="" label="LABEL IMAGE" description="DESC IMAGE" />
+				<field name="imagethumb2" type="media" default="" label="LABEL IMAGE THUMB" description="DESC IMAGE THUMB" />
+				<field name="title2" type="text" default="" label="LABEL HEADING" description="DESC HEADING" />
+				<field name="info2" type="textarea" cols="50" rows="4" filter="raw" default="" label="LABEL INFO" description="DESC INFO" />
+				<field name="inforight2" type="textarea" cols="50" rows="4" filter="raw" default="" label="LABEL INFO RIGHT" description="DESC INFO RIGHT" />
+				<field name="readmorelink2" type="text" default="http://" label="LABEL READMORE LINK" description="DESC READMORE LINK" />
+				<field name="readmoretext2" type="text" default="read more" label="Readmore text" description="Readmore text" />
+			</fieldset>
+			<fieldset name="image3" label="LABEL IMAGE3">
+				<field name="image3" type="media" default="" label="LABEL IMAGE" description="DESC IMAGE" />
+				<field name="imagethumb3" type="media" default="" label="LABEL IMAGE THUMB" description="DESC IMAGE THUMB" />
+				<field name="title3" type="text" default="" label="LABEL HEADING" description="DESC HEADING" />
+				<field name="info3" type="textarea" cols="50" rows="4" filter="raw" default="" label="LABEL INFO" description="DESC INFO" />
+				<field name="inforight3" type="textarea" cols="50" rows="4" filter="raw" default="" label="LABEL INFO RIGHT" description="DESC INFO RIGHT" />
+				<field name="readmorelink3" type="text" default="http://" label="LABEL READMORE LINK" description="DESC READMORE LINK" />
+				<field name="readmoretext3" type="text" default="read more" label="Readmore text" description="Readmore text" />
+			</fieldset>
+			<fieldset name="image4" label="LABEL IMAGE4">
+				<field name="image4" type="media" default="" label="LABEL IMAGE" description="DESC IMAGE" />
+				<field name="imagethumb4" type="media" default="" label="LABEL IMAGE THUMB" description="DESC IMAGE THUMB" />
+				<field name="title4" type="text" default="" label="LABEL HEADING" description="DESC HEADING" />
+				<field name="info4" type="textarea" cols="50" rows="4" filter="raw" default="" label="LABEL INFO" description="DESC INFO" />
+				<field name="inforight4" type="textarea" cols="50" rows="4" filter="raw" default="" label="LABEL INFO RIGHT" description="DESC INFO RIGHT" />
+				<field name="readmorelink4" type="text" default="http://" label="LABEL READMORE LINK" description="DESC READMORE LINK" />
+				<field name="readmoretext4" type="text" default="read more" label="Readmore text" description="Readmore text" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

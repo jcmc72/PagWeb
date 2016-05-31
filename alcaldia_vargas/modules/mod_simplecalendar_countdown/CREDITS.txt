@@ -1,0 +1,26 @@
+/**
+ * @package Joomla
+ * @subpackage SimpleCalendar Module for Counting down to a single event
+ * @copyright (C) 2008-2013 Fabrizio Albonico
+ * @license GNU/GPL, see LICENSE.txt
+ * SimpleCalendar Countdown Module is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License 3
+ * as published by the Free Software Foundation.
+
+ * SimpleCalendar Countdown Module is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with SimpleCalendar Countdown Module; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+ 
+ 
+==============================================
+ C R E D I T S
+==============================================
+
+* Robert L Concha for his basic Countdown timer, on which this component is based.
+* To all translators on Transifex

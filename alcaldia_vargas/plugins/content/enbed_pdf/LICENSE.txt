@@ -1,0 +1,12 @@
+﻿License
+
+Commercial use:
+This Plugin is NOT free for Commercial users! But it just cost as much as it is worth for you,
+if you want to use it in any commercial project just send me a donation of at least 5 EUR at www.heinelt.info.
+You can find donation button in all of my Joomla extension backends and also on my web-page.
+
+Non-Commectial use:
+No cost
+
+
+GNU GPL

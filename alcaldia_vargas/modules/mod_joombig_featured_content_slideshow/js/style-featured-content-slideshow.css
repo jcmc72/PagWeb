@@ -1,0 +1,90 @@
+#featured-content-slideshow1{ 
+	/*width:400px; 
+	padding-right:250px; */
+	position:relative; 
+	border:5px solid #ccc; 
+	/*height:260px;*/
+	overflow:hidden;
+	background:#fff;
+}
+#featured-content-slideshow1 ul.ui-tabs-nav{ 
+	position:absolute; 
+	top:0; 
+	/*left:400px; */
+	list-style:none; 
+	padding:0; 
+	margin:0; 
+	/*width:250px; 
+	height:250px;*/
+	overflow:auto;
+	overflow-x:hidden;
+}
+#featured-content-slideshow1 ul.ui-tabs-nav li{ 
+	padding:1px 0; padding-left:13px;  
+	font-size:12px; 
+	color:#666; 
+}
+#featured-content-slideshow1 ul.ui-tabs-nav li img{ 
+	float:left; margin:2px 5px; 
+	background:#fff; 
+	padding:2px; 
+	border:1px solid #eee;
+}
+#featured-content-slideshow1 ul.ui-tabs-nav li span{ 
+	font-size:11px; font-family:Verdana; 
+	line-height:18px; 
+}
+#featured-content-slideshow1 li.ui-tabs-nav-item a{ 
+	display:block; 
+	/*height:60px; */
+	text-decoration:none;
+	color:#333;  
+	background:#fff; 
+	line-height:20px; 
+	outline:none;
+}
+#featured-content-slideshow1 li.ui-tabs-nav-item a:hover{ 
+	background:#f2f2f2; 
+}
+#featured-content-slideshow1 li.ui-tabs-selected, #featured-content-slideshow1 li.ui-tabs-active, #featured-content-slideshow1 li.ui-state-active{ 
+	background:url('images/selected-item.png') center left no-repeat;  
+}
+#featured-content-slideshow1 ul.ui-tabs-nav li.ui-tabs-selected a, #featured-content-slideshow1 ul.ui-tabs-nav li.ui-tabs-active a{ 
+	background:#ccc; 
+}
+#featured-content-slideshow1 .ui-tabs-panel{ 
+	/*width:400px; 
+	height:250px; */
+	background:#999; 
+	position:relative;
+}
+.info-feature-content-slideshow{ 
+	position:absolute; 
+	bottom:0; left:0; 
+	width:100%;
+	background: url('images/transparent-bg.png'); 
+}
+#featured-content-slideshow1 .info-feature-content-slideshow a.hideshow{
+	position:absolute; font-size:11px; font-family:Verdana; color:#f0f0f0; right:10px; top:-20px; line-height:20px; margin:0; outline:none; background:#333;
+}
+#featured-content-slideshow1 .info-feature-content-slideshow h2{ 
+	font-size:1.2em; font-family:Georgia, serif; 
+	color:#fff; padding:3px; margin:0; font-weight:normal;
+	overflow:hidden; 
+	border-bottom:none;
+}
+#featured-content-slideshow1 .info-feature-content-slideshow p{ 
+	margin:0 3px; 
+	font-family:Verdana; font-size:11px; 
+	line-height:15px; color:#f0f0f0;
+}
+#featured-content-slideshow1 .info-feature-content-slideshow a{ 
+	text-decoration:none; 
+	color:#fff; 
+}
+#featured-content-slideshow1 .info-feature-content-slideshow a:hover{ 
+	text-decoration:none; 
+}
+#featured-content-slideshow1 .ui-tabs-hide{ 
+	display:none; 
+}

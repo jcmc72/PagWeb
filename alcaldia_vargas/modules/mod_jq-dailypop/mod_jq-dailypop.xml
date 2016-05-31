@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site">
+    <name>Daily Pop Up</name>
+    <author>Yannick Tanguy</author>
+    <creationDate>Janvier 2013</creationDate>
+    <copyright>Copyright (C) 2013 yannicktanguy.com All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>contact@yannicktanguy.com</authorEmail>
+    <authorUrl>http://www.yannicktanguy.com</authorUrl>
+    <version>1.6</version>
+	<description>MOD_JQ-DAILYPOP_DESCRIPTION</description>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jq-dailypop.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.mod_jq-dailypop.ini</language>
+	</languages>     
+	<files>
+		<filename module="mod_jq-dailypop">mod_jq-dailypop.php</filename>
+		<filename module="mod_jq-dailypop">mod_jq-dailypop.xml</filename>
+		<filename module="mod_jq-dailypop">helper.php</filename>
+		<filename module="mod_jq-dailypop">index.html</filename>
+		<folder>style</folder>
+		<folder>js</folder>
+	</files>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="articoumodule" type="radio" default="0" label="MOD_JQ-DAILYPOP_CHOOSE_LABEL" description="MOD_JQ-DAILYPOP_ACTIANIM_CHOOSE_DESC" >
+				   <option value="0">MOD_JQ-DAILYPOP_CHOOSE_ARTICLE</option>
+				   <option value="1">MOD_JQ-DAILYPOP_CHOOSE_MODULE</option>
+				</field>
+				<field name="title" type="sql" default="0" label="MOD_JQ-DAILYPOP_SELECT_ARTICLE" description="MOD_JQ-DAILYPOP_DESCRIPTION_SELECT_ARTICLE_DESC" query="SELECT id AS value, title FROM #__content ORDER BY title" />
+				<field name="titlem" type="sql" default="0" label="MOD_JQ-DAILYPOP_SELECT_MODULE" description="MOD_JQ-DAILYPOP_DESCRIPTION_SELECT_MODULE_DESC" query="SELECT id AS value, title AS titlem FROM #__modules WHERE access=1 ORDER BY title" />
+				<field type="spacer" name="myspacer2" hr="true" />
+				<field name="positbout" type="radio" default="0" label="MOD_JQ-DAILYPOP_POSITION_LABEL" description="MOD_JQ-DAILYPOP_POSITION_DESC" >
+				   <option value="1">MOD_JQ-DAILYPOP_POSITION_TOP</option>
+				   <option value="0">MOD_JQ-DAILYPOP_POSITION_BOTTOM</option>
+				</field>
+				<field name="textbutton" type="text" default="Close" label="MOD_JQ-DAILYPOP_DESCRIPTION_TEXTBUTTON" description="MOD_JQ-DAILYPOP_DESCRIPTION_TEXTBUTTON" />
+				<field type="spacer" name="myspacer4" hr="true" />
+				<field name="width" type="text" default="850" label="MOD_JQ-DAILYPOP_DESCRIPTION_CUSTOM_WIDTH" description="MOD_JQ-DAILYPOP_DESCRIPTION_CUSTOM_HTML" />
+				<field name="styledailypop" type="list" default="black" label="MOD_JQ-DAILYPOP_LABELSTYLE" description="MOD_JQ-DAILYPOP_LABELSTYLEDESC">
+					<option value="black">MOD_JQ-DAILYPOP_BLACK</option>
+					<option value="red">MOD_JQ-DAILYPOP_RED</option>
+					<option value="blue">MOD_JQ-DAILYPOP_BLUE</option>
+					<option value="green">MOD_JQ-DAILYPOP_GREEN</option>
+					<option value="yellow">MOD_JQ-DAILYPOP_YELLOW</option>
+					<option value="white">MOD_JQ-DAILYPOP_WHITE</option>
+					<option value="alpha">MOD_JQ-DAILYPOP_ALPHA</option>
+				</field>
+				<field name="actianim" type="radio" default="0" label="MOD_JQ-DAILYPOP_ACTIANIM_RADIO" description="MOD_JQ-DAILYPOP_ACTIANIM_RADIO" >
+				   <option value="1">MOD_JQ-DAILYPOP_DEBUG_ON</option>
+				   <option value="0">MOD_JQ-DAILYPOP_DEBUG_OFF</option>
+				</field>
+				<field name="animation" type="list" default="black" label="MOD_JQ-DAILYPOP_LABELANIMATION" description="MOD_JQ-DAILYPOP_LABELANIMATION">
+					<option value="0">MOD_JQ-DAILYPOP_ANIMATION_NONE</option>
+					<option value="1">MOD_JQ-DAILYPOP_ANIMATION_FADE</option>
+					<option value="2">MOD_JQ-DAILYPOP_ANIMATION_WIDTH</option>
+				</field>
+				<field type="spacer" name="myspacer5" hr="true" />
+				<field name="timer" type="text" default="10" label="MOD_JQ-DAILYPOP_CUSTOM_TIMER" description="MOD_JQ-DAILYPOP_DESCRIPTION_CUSTOM_TIMER" />
+				<field name="afterday" type="text" default="1" label="MOD_JQ-DAILYPOP_CUSTOM_AFTERDAY" description="MOD_JQ-DAILYPOP_DESCRIPTION_CUSTOM_AFTERDAY" />
+				<field type="spacer" name="myspacer3" hr="true" />
+				<field name="debugdaily" type="radio" default="0" label="MOD_JQ-DAILYPOP_DEBUG_RADIO" description="MOD_JQ-DAILYPOP_DESCRIPTION_RADIO" >
+				   <option value="1">MOD_JQ-DAILYPOP_DEBUG_ON</option>
+				   <option value="0">MOD_JQ-DAILYPOP_DEBUG_OFF</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

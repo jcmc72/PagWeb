@@ -1,0 +1,112 @@
+/**
+ * @version 1.0 $Id: simplecal_front.css,v 1.13 2009/11/18 04:12:24 fabrizio Exp $
+ * @package Joomla
+ * @subpackage SimpleCalendar
+ * @copyright (C) 2008 - 2009 Fabrizio Albonico
+ * @license GNU/GPL, see LICENCE.php
+ * SimpleCalendar is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License 3
+ * as published by the Free Software Foundation.
+
+ * SimpleCalendar is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with SimpleCalendar; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ 
+ **/
+ 
+table {
+	border-collapse: collapse; 
+}
+
+table#simplecalendar td {
+	padding: 3px;
+}
+
+
+table.sc_search {
+	margin: 1px;
+	font-size: 0.9em;
+}
+
+td.sc_header {
+	border-bottom: 1px solid black;
+	margin-bottom: 2px;
+}
+
+td.sc_rows {
+	border-bottom: 1px dotted lightgrey;
+}
+
+.buttons{
+	margin-top: 0px;
+	float: right;
+}
+.buttons img { 
+	border: none;
+}
+
+.buttons a {
+	padding: 0 0 0 5px; height: 16px; line-height: 16px;
+}
+
+button.sc_search {
+	font-size: 0.9em;
+	margin: 0.9em 0;	
+}
+
+.unpublished {
+	color: red;
+}
+
+span.gmaplink {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+th.sc_column_header {
+	font-style: italic;
+	text-align: left;
+}
+
+p.category_colors {
+	border: 1px solid lightgrey;
+	font-size: 10px;
+	margin-left: 5px;
+	width: 98%;
+	padding: 2px 2px 2px 5px;
+}
+
+/* NEW DEFINITIONS 3.0 */
+div.event_container {
+
+}
+
+div.event_date_container {
+	background: url('../images/emptycal.png') no-repeat center; 
+	float: left ;
+	display: block;
+	position: relative;
+	margin-left: 110px;
+    width: 120px;
+}
+
+div.event_venue {
+	margin-top: 20px;
+	text-align: right;
+}
+
+div.event_time {
+	text-align: right;
+}
+
+div.events_subcategories {
+	width: 99%;
+	padding: 3px;
+	border: 1px solid lightgrey;
+	font-size: x-small;
+}

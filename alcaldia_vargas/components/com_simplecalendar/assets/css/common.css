@@ -1,0 +1,44 @@
+/**
+ * @package Joomla
+ * @subpackage SimpleCalendar
+ * @copyright (C) 2008 - 2013 Fabrizio Albonico
+ * @license GNU/GPL, see LICENCE.php
+ * SimpleCalendar is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License 3
+ * as published by the Free Software Foundation.
+
+ * SimpleCalendar is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with SimpleCalendar; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ **/
+
+.buttons{
+	margin-top: 0px;
+	float: right;
+}
+.buttons img { 
+	border: none;
+}
+
+.buttons a {
+	padding: 0 0 0 5px; height: 16px; line-height: 16px;
+}
+
+span.sc_status {
+	text-decoration:none;
+	border-radius:5px;
+	cursor: help;
+}
+
+div .sc-footer {
+	font-size: 90%;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	color: #aaa;
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.3" type="module" client="site" method="upgrade">
+	<name>JE Social Profiles</name> 
+    <version>3.3</version>
+    <creationDate>February, 2015</creationDate>
+    <author>jExtensions.com</author>
+    <authorEmail>support@jExtensions.com</authorEmail>
+    <authorUrl>http://jExtensions.com</authorUrl>
+    <copyright>Copyright 2015 - jExtensions.com</copyright>
+    <license>GNU/GPL</license>
+	<description><![CDATA[
+	<h1 class="sub-heading">JE Social Profiles</h1>	
+	<div class="description">Download more free extensions from <a href="http://jextensions.com/" target="_blank">jExtensions.com</a><br/>
+	Need help? <a href="http://jextensions.com/social-media-profiles" target="_blank">Click here to visit the support page</a>.<br/>
+	<span class="credits">Credits: <a href="http://icondock.com/free/vector-social-media-icons" target="_blank" >Free Icons</a></span>
+	</div>
+		]]>
+	</description>
+	
+	<files>
+		<filename module="mod_je_socialprofiles">mod_je_socialprofiles.php</filename>
+		<filename>index.html</filename>
+		<folder>images/</folder>
+		<folder>css/</folder>
+		<folder>php/</folder>
+	</files>
+
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_je_socialprofiles/php">
+			<fieldset name="basic">	
+
+				<field name="styleIcon" type="list" default="color_32" label="Icon Styles" description="Choose the style of the icons.">
+					<option value="color_16">Color Rounded 16x16</option>
+					<option value="color_24">Color Rounded 24x24</option>
+					<option value="color_32">Color Rounded 32x32</option>
+				</field>
+			<field type="asset" />
+			</fieldset>	
+			
+			<fieldset name="slides" label="&gt;&gt;&gt; Social Icons / Profiles &lt;&lt;&lt;">
+									
+					<field name="Icon1" type="icons" default="" label="500px" description="Insert URL here." />
+					<field name="Icon2" type="icons" default="" label="About.me" description="Insert URL here."/>
+					<field name="Icon3" type="icons" default="" label="Bebo" description="Insert URL here." />
+					<field name="Icon4" type="icons" default="" label="Behance" description="Insert URL here." />
+					<field name="Icon5" type="icons" default="" label="Blip" description="Insert URL here." />
+					<field name="Icon6" type="icons" default="" label="Blogger" description="Insert URL here." />
+					<field name="Icon7" type="icons" default="" label="Coroflot" description="Insert URL here." />
+					<field name="Icon8" type="icons" default="" label="Daytum" description="Insert URL here." />
+					<field name="Icon9" type="icons" default="" label="Delicious" description="Insert URL here." />
+					<field name="Icon10" type="icons" default="" label="DesignBump" description="Insert URL here." />
+					<field name="Icon11" type="icons" default="" label="Designfloat" description="Insert URL here." />
+					<field name="Icon12" type="icons" default="" label="DeviantArt" description="Insert URL here." />
+					<field name="Icon13" type="icons" default="" label="Digg" description="Insert URL here." />
+					<field name="Icon14" type="icons" default="" label="Dribbble" description="Insert URL here." />
+					<field name="Icon15" type="icons" default="" label="Dropplr" description="Insert URL here." />
+					<field name="Icon16" type="icons" default="" label="Facebook" description="Insert URL here." />
+					<field name="Icon17" type="icons" default="" label="Feedburner" description="Insert URL here." />
+					<field name="Icon18" type="icons" default="" label="Flickr" description="Insert URL here." />
+					<field name="Icon19" type="icons" default="" label="Foodspotting" description="Insert URL here." />
+					<field name="Icon20" type="icons" default="" label="Forrst" description="Insert URL here." />
+					<field name="Icon21" type="icons" default="" label="Foursquare" description="Insert URL here." />
+					<field name="Icon22" type="icons" default="" label="Friendfeed" description="Insert URL here." />
+					<field name="Icon23" type="icons" default="" label="Friendster" description="Insert URL here." />
+					<field name="Icon24" type="icons" default="" label="Gdgt" description="Insert URL here." />
+					<field name="Icon25" type="icons" default="" label="Github" description="Insert URL here." />
+					<field name="Icon26" type="icons" default="" label="Google Plus" description="Insert URL here." />
+					<field name="Icon27" type="icons" default="" label="Gowalla" description="Insert URL here." />
+					<field name="Icon28" type="icons" default="" label="Grooveshark" description="Insert URL here." />
+					<field name="Icon29" type="icons" default="" label="Hyves" description="Insert URL here." />
+					<field name="Icon30" type="icons" default="" label="Icq" description="Insert URL here." />
+					<field name="Icon31" type="icons" default="" label="Identi.ca" description="Insert URL here." />
+					<field name="Icon32" type="icons" default="" label="Instagam" description="Insert URL here." />
+					<field name="Icon33" type="icons" default="" label="Lastfm" description="Insert URL here." />
+					<field name="Icon34" type="icons" default="" label="LinkedIn" description="Insert URL here." />
+					<field name="Icon35" type="icons" default="" label="Meetup" description="Insert URL here." />
+					<field name="Icon36" type="icons" default="" label="Metacafe" description="Insert URL here." />
+					<field name="Icon37" type="icons" default="" label="MisterWong" description="Insert URL here." />
+					<field name="Icon38" type="icons" default="" label="Mixx" description="Insert URL here." />
+					<field name="Icon39" type="icons" default="" label="Mobileme" description="Insert URL here." />
+					<field name="Icon40" type="icons" default="" label="Myspace" description="Insert URL here." />
+					<field name="Icon41" type="icons" default="" label="Newsvine" description="Insert URL here." />
+					<field name="Icon42" type="icons" default="" label="Photobucket" description="Insert URL here." />
+					<field name="Icon43" type="icons" default="" label="Picasa" description="Insert URL here." />
+					<field name="Icon44" type="icons" default="" label="Pinterest" description="Insert URL here." />
+					<field name="Icon45" type="icons" default="" label="Podcast" description="Insert URL here." />
+					<field name="Icon46" type="icons" default="" label="Qik" description="Insert URL here." />
+					<field name="Icon47" type="icons" default="" label="Quora" description="Insert URL here." />
+					<field name="Icon48" type="icons" default="" label="Reddit" description="Insert URL here." />
+					<field name="Icon49" type="icons" default="" label="Rss" description="Insert URL here." />
+					<field name="Icon50" type="icons" default="" label="Scribd" description="Insert URL here." />
+					<field name="Icon51" type="icons" default="" label="Slashdot" description="Insert URL here." />
+					<field name="Icon52" type="icons" default="" label="Slideshare" description="Insert URL here." />
+					<field name="Icon53" type="icons" default="" label="Soundcloud" description="Insert URL here." />
+					<field name="Icon54" type="icons" default="" label="Spotify" description="Insert URL here." />
+					<field name="Icon55" type="icons" default="" label="Squidoo" description="Insert URL here." />
+					<field name="Icon56" type="icons" default="" label="Stackoverflow" description="Insert URL here." />
+					<field name="Icon57" type="icons" default="" label="Stumbleupon" description="Insert URL here." />
+					<field name="Icon58" type="icons" default="" label="Technorati" description="Insert URL here." />
+					<field name="Icon59" type="icons" default="" label="Tumblr" description="Insert URL here." />
+					<field name="Icon60" type="icons" default="" label="Twitter" description="Insert URL here." />
+					<field name="Icon61" type="icons" default="" label="Viddler" description="Insert URL here." />
+					<field name="Icon62" type="icons" default="" label="Vimeo" description="Insert URL here." />
+					<field name="Icon63" type="icons" default="" label="Virb" description="Insert URL here." />
+					<field name="Icon64" type="icons" default="" label="Xing" description="Insert URL here." />
+					<field name="Icon65" type="icons" default="" label="Yahoo" description="Insert URL here." />
+					<field name="Icon66" type="icons" default="" label="Yelp" description="Insert URL here." />
+					<field name="Icon67" type="icons" default="" label="Youtube" description="Insert URL here." />
+			</fieldset>						
+		</fields>
+
+	</config>
+
+</extension>

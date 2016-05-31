@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site"  method="upgrade">
+	<name>mod_simplecalendar</name>
+	<creationDate>February 15, 2016</creationDate>
+	<author>FA Software</author>
+	<copyright>(c) 2009-2016 FA Software - Fabrizio Albonico</copyright>
+	<license>GNU/GPLv3 General Public License</license>
+	<authorEmail>software@albonico.ch</authorEmail>
+	<authorUrl>http://software.albonico.ch</authorUrl>
+	<version>3.1.0</version>
+	<description>This module shows upcoming, past or featured events taken from SimpleCalendar.</description>
+
+	<files>
+		<filename module="mod_simplecalendar">mod_simplecalendar.php</filename>
+		<filename>index.html</filename>
+		<filename>LICENSE.txt</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>sql/install.mysql.utf8.sql</filename>
+		<filename>sql/index.html</filename>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_simplecalendar.ini</language>
+		<language tag="it-IT">it-IT/it-IT.mod_simplecalendar.ini</language>
+		<language tag="de-DE">de-DE/de-DE.mod_simplecalendar.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.mod_simplecalendar.ini</language>
+		<language tag="cs-CZ">cs-CZ/cs-CZ.mod_simplecalendar.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.mod_simplecalendar.ini</language>
+	</languages>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<updateservers>
+		<server type="extension" name="mod_simplecalendar" priority="1">http://software.albonico.ch/mod_simplecalendar_update.xml</server>
+	</updateservers>
+	<config>
+    <fields name="params">
+	<fieldset name="basic">
+		<field 
+			name="count" 
+			type="text" 
+			default="5"
+			class="input-small"
+			label="MOD_SIMPLECALENDAR_NUMBER_OF_EVENTS"
+			description="MOD_SIMPLECALENDAR_NUMBER_OF_EVENTS_DESC" />
+		<field 
+			name="fields"
+			type="text"
+			default="{NAME}, {VENUE} ({START_DATE})"
+			label="MOD_SIMPLECALENDAR_FIELDS"
+			description="MOD_SIMPLECALENDAR_FIELDS_DESC" />
+		<field name="show_link"
+			type="radio"
+			default="1"
+			class="btn-group"
+			label="MOD_SIMPLECALENDAR_SHOW_LINK"
+			description="MOD_SIMPLECALENDAR_SHOW_LINK_DESC"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="period"
+			type="list"
+			default="1"
+			label="MOD_SIMPLECALENDAR_SHOW_PERIOD"
+			description="MOD_SIMPLECALENDAR_SHOW_PERIOD_DESC">
+			<option value="0">MOD_SIMPLECALENDAR_SHOW_PERIOD_ALL_DESC</option>
+			<option value="1">MOD_SIMPLECALENDAR_SHOW_PERIOD_UPCOMING_DESC</option>
+			<option value="2">MOD_SIMPLECALENDAR_SHOW_PERIOD_PAST_DESC</option>
+			<option value="-1">MOD_SIMPLECALENDAR_SHOW_PERIOD_ARCHIVED_DESC</option>
+			<option value="3">MOD_SIMPLECALENDAR_SHOW_PERIOD_FEATURED_UPCOMING_DESC</option>
+			<option value="4">MOD_SIMPLECALENDAR_SHOW_PERIOD_FEATURED_PAST_DESC</option>
+			<option value="5">MOD_SIMPLECALENDAR_SHOW_PERIOD_ONGOING_DESC</option>
+			<option value="6">MOD_SIMPLECALENDAR_SHOW_PERIOD_FEATURED_ONGOING_DESC</option>
+		</field>
+		<field name="sort"
+			type="radio"
+			default="1"
+			class="btn-group"
+			label="MOD_SIMPLECALENDAR_SORT"
+			description="MOD_SIMPLECALENDAR_SORT_DESC">
+			<option value="asc">MOD_SIMPLECALENDAR_SORT_DESC_ASC</option>
+			<option value="desc">MOD_SIMPLECALENDAR_SORT_DESC_DESC</option>
+		</field>
+		<field 
+			name="date_format"
+			type="text"
+			default="d.m.Y" 
+			class="input-small"
+			label="MOD_SIMPLECALENDAR_DATE_FORMAT" 
+			description="MOD_SIMPLECALENDAR_DATE_FORMAT_DESC" />
+		<field 
+			name="time_format" 
+			type="text" 
+			default="H:i" 
+			class="input-small"
+			label="MOD_SIMPLECALENDAR_TIME_FORMAT" 
+			description="MOD_SIMPLECALENDAR_TIME_FORMAT_DESC" />
+		<field name="moduleclass_sfx" type="text" default="" label="MOD_SIMPLECALENDAR_MODULE_CLASS_SUFFIX" description="MOD_SIMPLECALENDAR_MODULE_CLASS_SUFFIX_DESC" />
+	</fieldset>
+	<fieldset name="advanced">
+		<field
+			name="catid"
+			type="category"
+			extension="com_simplecalendar"
+			label="JCATEGORY"
+			multiple="true"
+			size="5"
+			default=""
+			description="MOD_SIMPLECALENDAR_CATEGORY_DESC" >
+			<option value="">JOPTION_ALL_CATEGORIES</option>
+		</field>
+	</fieldset>
+   </fields>
+   </config>
+</extension>

@@ -1,0 +1,91 @@
+/**
+ * @package 	Module JQuery Daily Pop
+ * @version 	1.6
+ * @author 		Yannick Tanguy
+ * @copyright 	Copyright (C) 2013 - yannick Tanguy
+ * @license 	GNU/GPL http://www.gnu.org/copyleft/gpl.html
+ **/
+#dailycomplete{
+	visibility:hidden;
+}
+#dailyfullscreen {
+	background: none repeat scroll 0 0 rgba(0,0,255,0.85);
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#0000ff', EndColorStr='#0000ff');
+	bottom: 0;
+	color: #FFFFFF;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+	display:none;
+}
+#dailyposition {
+	margin:auto;
+}
+.copyrightyannt{ 
+	background: -moz-linear-gradient(#3A3A3A, #000000 9px, #000000 16px, #3A3A3A);
+	background: -webkit-linear-gradient(#3A3A3A, #000000 9px, #000000 16px, #3A3A3A);
+	background: -ms-linear-gradient(#3A3A3A, #000000 9px, #000000 16px,#3A3A3A);
+	background: -o-linear-gradient(#3A3A3A, #000000 9px, #000000 16px,#3A3A3A);
+	background: -linear-gradient(#3A3A3A, #000000 9px, #000000 16px,#3A3A3A);
+	height:20px;
+	padding:3px;
+}
+.copyrightyannt a {
+	float:right;
+	text-shadow:1px 1px #333, -1px -1px #444;
+	font-style:italic;
+	font-weight:bolder;
+	font-size:9px;
+	color:#888888;
+	margin-top:1px;
+}
+.posdailybut {
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  margin:15px 0px 0px 0px;
+}
+.dailybutton{
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px !important;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+	height: 34px;
+	z-index:10000;
+}
+.dailybutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	background-color:#dfdfdf;
+}
+.dailybutton:active {
+	position:relative;
+	top:1px;
+}
+#dailytimer {
+	margin:auto;
+	position:relative;
+	width:190px;
+}
+#actdaily {
+  background: none repeat scroll 0px 0px transparent;
+  cursor: pointer;
+  height: 34px;
+  margin-top: -34px;
+  position: absolute;
+  width: 100%;
+  z-index:10001;
+}

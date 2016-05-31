@@ -1,0 +1,198 @@
+/**
+ *	com_simplecalendar - a simple calendar component for Joomla
+ *  Copyright (C) 2008-2013 Fabrizio Albonico
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *	(at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+ 
+table#sc_form tr {
+	border-style: none;
+}
+
+table#sc_form td {
+	border-style: none;
+	padding: 3px;
+}
+
+.additional_info h2 {
+	font-size: 10px;
+    /*font-weight: bold;*/
+}
+
+dl.sc_detail {
+	margin: 0 5px;
+	margin-bottom: 15px;
+}
+
+dt.sc_detail {
+	/* margin-right: 5px; */
+	padding: 0.3em 0;
+	float:left;
+	font-size: 1em;
+	font-style: italic;
+	width: 12em;
+	background: transparent;
+	border-bottom: 1px solid #ddd;
+}
+
+dd.sc_detail {
+	display: block;
+	margin: 0 0 5px 13.5em;
+	padding: 0.3em 0;
+	font-size: 1em;
+	background: transparent;
+	z-index: 10;
+}
+
+table {
+	border-collapse: collapse; 
+}
+
+table.sc_search {
+	border: 0px;
+	margin: 1px;
+	font-size: 0.9em;
+}
+
+table.sc_search tr {
+	border: 0px;
+}
+
+table.sc_search td {
+	border: 0px;
+}
+
+table.sc_table {
+	border: 0px;
+	border-bottom: 1px solid black;
+	margin-bottom: 2px;
+}
+
+table.sc_table tr {
+	border-style: none;
+}
+
+table.sc_table td {
+	border-style: none;
+}
+
+td.sc_rows {
+	border-bottom: 1px dotted lightgrey;
+}
+
+button.sc_search {
+	font-size: 0.9em;
+	margin: 0.9em 0;	
+}
+
+.unpublished {
+	color: red;
+}
+
+span#entryinfo {
+	margin: 0 10px;
+	width: 98%;
+}
+
+th.sc_column_header {
+	font-style: italic;
+}
+
+p.category_colors {
+	border: 1px solid lightgrey;
+	font-size: 10px;
+	margin-left: 5px;
+	width: 98%;
+	padding: 2px 2px 2px 5px;
+}
+
+
+/*  NEW CSS ITEMS */
+div .sc_detail_wrapper {
+	width: 98%;
+	float: left;
+}
+
+div .sc_clear {
+	clear:both;
+	padding-top: 20px;
+}
+
+div .sc_map_wrapper {
+	float: right;
+	clear: right;
+	width: 180px;
+	height: 200px;
+	overflow: hidden;
+	border:#CCCCCC solid 1px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+div .sc_map_description {
+	background: url('../images/transp_60.png');
+  	position:absolute;  
+    bottom:0px;   
+    left:0px;  
+    width:100%;  
+    font-family: 'tahoma';  
+    font-size:15px;  
+    color:white;  
+    /*opacity:0.6; */ /* transparency */  
+    /*filter:alpha(opacity=60); *//* IE transparency */ 
+}
+
+div .sc_map_button {
+	padding: 4px;
+	margin:0px;  
+	float: right;
+}
+
+
+div .sc_detail_left {
+	float: left;
+	margin: 0;
+	padding: 1em;
+	width: auto;
+}
+
+div .sc_info_container {
+	display:block;
+	clear:both;
+	margin-top:10px;
+	border-top:1px solid lightgrey;	
+}
+
+div .sc_info_container span {
+	font-size: 0.8em;
+	margin-left: 3px;
+	margin-right: 3px;
+	white-space: nowrap;
+}
+
+div .sc_social_container {
+	clear:both;
+	height: 22px;
+	margin-bottom: 10px;
+	overflow: visible;
+}
+
+div .sc_social_container div {
+	overflow: visible;
+}
+ 
+/* To fill the container and nothing else */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+	width: 100% !important;
+}

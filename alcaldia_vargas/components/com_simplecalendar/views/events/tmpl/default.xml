@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_SIMPLECALENDAR_EVENTS_VIEW_DEFAULT_TITLE">
+		<message><![CDATA[COM_SIMPLECALENDAR_EVENTS_VIEW_DEFAULT_DESC]]></message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request"
+			addfieldpath="/administrator/components/com_simplecalendar/models/fields"
+		>
+			<field name="catid" type="category"
+				description="COM_SIMPLECALENDAR_MENU_CATEGORY_DESC"
+				extension="com_simplecalendar"
+				label="JCATEGORY"
+				multiple="true"
+				size="5"
+				default="">
+				<option value="">JOPTION_ALL_CATEGORIES</option>
+			</field>
+			<field name="id" type="hidden" multiple="true" default="" />
+		</fieldset>
+	</fields>
+	<fields name="params">
+		<fieldset name="layout" label="COM_SIMPLECALENDAR_LAYOUT_OPTIONS">
+			<field name="list_style"
+				type="list"
+				default="list"
+				label="COM_SIMPLECALENDAR_MENU_LIST_STYLE_LABEL"
+				description="COM_SIMPLECALENDAR_MENU_LIST_STYLE_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="list">COM_SIMPLECALENDAR_LIST_STYLE_LIST_DESC</option>
+				<option value="items">COM_SIMPLECALENDAR_LIST_STYLE_ITEMS_DESC</option>
+			</field>
+			<field name="period"
+				type="list"
+				default="1"
+				label="COM_SIMPLECALENDAR_MENU_SHOW_PERIOD_LABEL"
+				description="COM_SIMPLECALENDAR_MENU_SHOW_PERIOD_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">COM_SIMPLECALENDAR_SIDEBAR_SELECT_PERIOD_ALL</option>
+				<option value="1">COM_SIMPLECALENDAR_SIDEBAR_SELECT_PERIOD_UPCOMING</option>
+				<option value="2">COM_SIMPLECALENDAR_SIDEBAR_SELECT_PERIOD_PAST</option>
+				<option value="-1">COM_SIMPLECALENDAR_SHOW_PERIOD_ARCHIVED_DESC</option>
+				<option value="3">COM_SIMPLECALENDAR_SIDEBAR_SELECT_PERIOD_UPCOMING_FEATURED</option>
+				<option value="4">COM_SIMPLECALENDAR_SIDEBAR_SELECT_PERIOD_PAST_FEATURED</option>
+			</field>
+			<field name="sort"
+				type="list"
+				default="asc"
+				label="COM_SIMPLECALENDAR_MENU_SORT_LABEL"
+				description="COM_SIMPLECALENDAR_MENU_SORT_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="asc">COM_SIMPLECALENDAR_SORT_ASC_DESC</option>
+				<option value="desc">COM_SIMPLECALENDAR_SORT_DESC_DESC</option>
+			</field>
+			<field
+				name="show_print_icon_list"
+				type="radio"
+				class="btn-group"
+				default="1"
+				label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_PRINT_ICON_LABEL" >
+				<option
+					value="0">JNO</option>
+				<option
+					value="1">JYES</option>
+			</field>
+			
+			<field
+				name="show_vcal_icon_list"
+				type="radio"
+				class="btn-group"
+				default="1"
+				label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_VCAL_ICON_LABEL" >
+				<option
+					value="0">JNO</option>
+				<option
+					value="1">JYES</option>
+			</field>
+		</fieldset>
+		<fieldset name="basic" label="JGLOBAL_CATEGORY_OPTIONS">
+			<field name="show_category_title" type="list"
+				label="JGLOBAL_SHOW_CATEGORY_TITLE"
+				description="JGLOBAL_SHOW_CATEGORY_TITLE_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			<field name="show_description" type="list"
+				description="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_DESC"
+				label="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_LABEL"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			<field name="show_subcat_desc"
+				type="radio"
+				class="btn-group"
+				label="JGLOBAL_SHOW_SUBCATEGORIES_DESCRIPTION_LABEL"
+				description="JGLOBAL_SHOW_SUBCATEGORIES_DESCRIPTION_DESC"
+				default="1"
+				>
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+			</field>
+			<field name="show_subcategory_content" type="radio"
+				default="0"
+				description="JGLOBAL_SHOW_SUBCATEGORY_CONTENT_DESC"
+				label=""
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+		</fieldset>
+		<fieldset name="advanced" label="JGLOBAL_LIST_LAYOUT_OPTIONS">
+			<field name="show_pagination" type="list"
+				description="JGLOBAL_PAGINATION_DESC"
+				label="JGLOBAL_PAGINATION_LABEL"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+				<option value="2">JGLOBAL_AUTO</option>
+			</field>
+			
+			<field name="show_pagination_limit" type="list"
+				description="JGLOBAL_DISPLAY_SELECT_DESC"
+				label="JGLOBAL_DISPLAY_SELECT_LABEL"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>
+

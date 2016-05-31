@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_SIMPLECALENDAR_SINGLE_EVENT_VIEW_DEFAULT_TITLE">
+		<message>COM_SIMPLECALENDAR_SINGLE_EVENT_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_simplecalendar/models/fields"
+	>
+		<fieldset name="request">
+			<field
+				name="id"
+				type="event"
+				label="COM_SIMPLECALENDAR_EVENT_FIELD_EVENT_LABEL"
+				description="COM_SIMPLECALENDAR_EVENT_FIELD_EVENT_DESC"
+			/>
+		</fieldset>
+	</fields>
+	
+	<fields name="params">
+		<fieldset name="layout" label="COM_SIMPLECALENDAR_LAYOUT_OPTIONS">
+			<field
+				name="show_print_icon"
+				type="radio"
+				class="btn-group"
+				default="1"
+				label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_PRINT_ICON_LABEL" >
+				<option
+					value="0">JNO</option>
+				<option
+					value="1">JYES</option>
+			</field>
+			<field
+				name="show_mail_icon"
+				type="radio"
+				class="btn-group"
+				default="1"
+				label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_MAIL_ICON_LABEL" 
+				description="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_MAIL_ICON_DESC"
+			>
+				<option
+					value="0">JNO</option>
+				<option
+					value="1">JYES</option>
+			</field>
+			<field
+				name="show_vcal_icon"
+				type="radio"
+				class="btn-group"
+				default="1"
+				label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_VCAL_ICON_LABEL" >
+				<option
+					value="0">JNO</option>
+				<option
+					value="1">JYES</option>
+			</field>
+		</fieldset>
+		<fieldset name="basic" label="JGLOBAL_CATEGORY_OPTIONS">
+			<field name="show_username" type="list"
+				label="COM_SIMPLECALENDAR_PARAM_SHOW_USERNAME_LABEL"
+				description="COM_SIMPLECALENDAR_PARAM_SHOW_USERNAME_DESC"
+				>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			
+			<field name="show_description_title" type="list"
+				label="COM_SIMPLECALENDAR_PARAM_SHOW_DESCRIPTION_LABEL"
+				description="COM_SIMPLECALENDAR_PARAM_SHOW_DESCRIPTION_DESC"
+				>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>
+

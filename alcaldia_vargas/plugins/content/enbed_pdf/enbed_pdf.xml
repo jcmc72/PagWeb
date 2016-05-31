@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="content" method="upgrade">
+    <name>Enbed pdf's</name>
+    <author>Maik Heinelt</author>
+    <creationDate>21 August 2013</creationDate>
+    <copyright>(C)2010 Maik Heinelt, http://www.heinelt.info</copyright>
+    <license>http://www.gnu.org/copyright/gpl.html GNU/GPL</license>
+    <authorEmail>maik@heinelt.info</authorEmail>
+    <authorUrl>www.heinelt.info</authorUrl>
+    <version>1.8.5</version>
+    <description>PLG_ENBED_PDF_DESC</description>
+
+	<files>
+        <filename plugin="enbed_pdf">enbed_pdf.php</filename>
+        <filename>browser.php</filename>
+        <filename>proxy.php</filename>
+        <filename>LICENSE.txt</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<languages folder="language">
+		<language tag="de-DE">de-DE.plg_content_enbed_pdf.sys.ini</language>
+		<language tag="de-DE">de-DE.plg_content_enbed_pdf.ini</language>
+		<language tag="en-GB">en-GB.plg_content_enbed_pdf.sys.ini</language>
+		<language tag="en-GB">en-GB.plg_content_enbed_pdf.ini</language>
+		<language tag="da-DK">da-DK.plg_content_enbed_pdf.sys.ini</language>
+		<language tag="da-DK">da-DK.plg_content_enbed_pdf.ini</language>
+		<language tag="fr-FR">fr-FR.plg_content_enbed_pdf.sys.ini</language>
+		<language tag="fr-FR">fr-FR.plg_content_enbed_pdf.ini</language>
+		<language tag="it-IT">it-IT.plg_content_enbed_pdf.sys.ini</language>
+		<language tag="it-IT">it-IT.plg_content_enbed_pdf.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field name="mode" type="list"
+					default="0"
+					description="PLG_ENBED_PDF_MODE_DESC"
+					label="PLG_ENBED_PDF_LBL_DEFVWR"
+				>
+					<option value="0">Adobe pdf browser plugin</option>
+					<option value="1">Google viewer</option>
+				</field>
+				
+				
+				<field name="dheight" type="text"
+					default="400"
+					size="6"
+					description="PLG_ENBED_PDF_DESC_DEFHEIGHT"
+					label="PLG_ENBED_PDF_LBL_DEFHEIGHT"
+				/>
+				
+				
+				<field name="dwidth" type="text"
+					default="300"
+					size="6"
+					description="PLG_ENBED_PDF_DESC_DEFWIDTH"
+					label="PLG_ENBED_PDF_LBL_DEFWIDTH"
+				/>
+				
+				
+				<field name="@spacer" type="spacer"
+					description=""
+					label=""
+				/>
+				
+				
+				<field name="alt_link" type="radio"
+					default="1"
+					description="PLG_ENBED_PDF_DESC_SHOWLINK"
+					label="PLG_ENBED_PDF_LBL_SHOWLINK"
+				>
+					<option value="0">PLG_ENBED_PDF_SW_YES</option>
+					<option value="1">PLG_ENBED_PDF_SW_NO</option>
+				</field>
+				
+				
+				<field name="link_comment" type="text"
+					default="Can't see this document?"
+					size="40"
+					description="PLG_ENBED_PDF_DESC_LINKCOMMENT"
+					label="PLG_ENBED_PDF_LBL_LINKCOMMENT"
+				/>
+				
+				
+				<field name="placeholder" type="text"
+					default="Click Me"
+					size="30"
+					description="PLG_ENBED_PDF_DESC_PLCHDLR"
+					label="PLG_ENBED_PDF_LBL_PLCHDR"
+				/>
+				
+			</fieldset>
+
+
+
+			<fieldset name="PLG_ENBED_PDF_CAT_GOOGLE">
+				
+				<field name="proxy" type="radio"
+					default="1"
+					description="PLG_ENBED_PDF_DESC_PXY"
+					label="PLG_ENBED_PDF_LBL_PXY"
+				>
+					<option value="0">PLG_ENBED_PDF_SW_YES</option>
+					<option value="1">PLG_ENBED_PDF_SW_NO</option>
+				</field>
+				
+			</fieldset>
+			
+			
+			
+			<fieldset name="PLG_ENBED_PDF_CAT_ADOBE">
+				
+				<field name="ar_toolbar" type="radio"
+					default="1"
+					description="PLG_ENBED_PDF_DESC_AR_TLBR"
+					label="PLG_ENBED_PDF_LBL_AR_TLBR"
+				>
+					<option value="0">PLG_ENBED_PDF_SW_DISABLED</option>
+					<option value="1">PLG_ENBED_PDF_SW_ENABLED</option>
+				</field>
+				
+				
+				<field name="ar_navpanes" type="radio"
+					default="1"
+					description="PLG_ENBED_PDF_DESC_AR_NPR"
+					label="PLG_ENBED_PDF_LBL_AR_NPR"
+				>
+					<option value="0">PLG_ENBED_PDF_SW_DISABLED</option>
+					<option value="1">PLG_ENBED_PDF_SW_ENABLED</option>
+				</field>
+				
+				
+				<field name="ar_scrollbar" type="radio"
+					default="1"
+					description="PLG_ENBED_PDF_DESC_AR_SRBR"
+					label="PLG_ENBED_PDF_LBL_AR_SRBR"
+				>
+					<option value="0">PLG_ENBED_PDF_SW_DISABLED</option>
+					<option value="1">PLG_ENBED_PDF_SW_ENABLED</option>
+				</field>
+				
+				
+				<field name="ar_searchbar" type="radio"
+					default="0"
+					description="PLG_ENBED_PDF_DESC_AR_SRCHBR"
+					label="PLG_ENBED_PDF_LBL_AR_SRCHBR"
+				>
+					<option value="0">PLG_ENBED_PDF_SW_DISABLED</option>
+					<option value="1">PLG_ENBED_PDF_SW_ENABLED</option>
+				</field>
+				
+			</fieldset>
+
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="Enbed_pdf updates">http://heinelt.info/jupdates/enbed_pdf/extension.xml</server>
+	</updateservers>
+</extension>

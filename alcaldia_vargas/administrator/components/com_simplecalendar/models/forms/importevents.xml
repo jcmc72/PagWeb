@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields>
+	<fieldset name="details"
+		addfieldpath="/administrator/components/com_simplecalendar/models/fields"
+	>
+		<field
+			name="csvfile" 
+			type="file"
+			label="COM_SIMPLECALENDAR_IMPORT_EVENT_FILE_LABEL" 	
+			description ="COM_SIMPLECALENDAR_IMPORT_EVENT_FILE_DESC" 
+			required="true" />
+
+		<field 
+			name="delimiter" type="text" 
+			size="1" 
+			default=";"
+			class="input-small"
+			label="COM_SIMPLECALENDAR_IMPORT_EVENT_DELIMITER_LABEL"
+			description="COM_SIMPLECALENDAR_IMPORT_EVENT_DELIMITER_DESC"
+			required="true" />
+
+		<field 
+			name="record_number" 
+			type="text" 
+			size="2" 
+			default="1"
+			class="input-small"
+			label="COM_SIMPLECALENDAR_IMPORT_EVENT_START_FROM_RECORD_LABEL"
+			description="COM_SIMPLECALENDAR_IMPORT_EVENT_START_FROM_RECORD_DESC" 
+			required="true"
+			validate="numeric" />
+		
+		<field name="categoryID" 
+			type="categoryedit"
+			extension="com_simplecalendar"
+			label="JCATEGORY"
+			description="COM_SIMPLECALENDAR_IMPORT_EVENT_CATEGORY_DESC"
+			class="inputbox" 
+			required="true"
+			addfieldpath="/administrator/components/com_categories/models/fields"
+		></field>
+	
+		<field
+			name="start_dt"
+			type="text"
+			class="input-small"
+			size="40"
+			default="1"
+			label="COM_SIMPLECALENDAR_IMPORT_EVENT_START_DATE_LABEL" 
+		/>
+		
+		<field
+			name="end_dt"
+			type="text"
+			class="input-small"
+			size="40"
+			default="2"
+			label="COM_SIMPLECALENDAR_IMPORT_EVENT_END_DATE_LABEL"
+		/>
+		
+		<field
+			name="reserve_dt"
+			type="text"
+			class="input-small"
+			size="40"
+			default="3"
+			label="COM_SIMPLECALENDAR_IMPORT_EVENT_RESERVE_DATE_LABEL"
+		/>
+		
+		<field
+			name="start_time"
+			type="text"
+			class="input-small"
+			size="40"
+			default="4"
+			label="COM_SIMPLECALENDAR_IMPORT_EVENT_START_TIME_LABEL"
+		/>
+		
+		<field
+			name="end_time"
+			type="text"
+			class="input-small"
+			size="40"
+			default="5"
+			label="COM_SIMPLECALENDAR_IMPORT_EVENT_END_TIME_LABEL"
+		/>
+		
+		<field
+			name="name"
+			type="text"
+			class="input-small"
+			size="40"
+			default="6"
+			label="COM_SIMPLECALENDAR_IMPORT_EVENT_NAME_LABEL"
+		/>
+		
+		<field
+			name="venue"
+			type="text"
+			class="input-small"
+			size="40"
+			default="7"
+			label="COM_SIMPLECALENDAR_IMPORT_EVENT_VENUE_LABEL"
+		/>
+		
+		<field
+			name="category"
+			type="text"
+			class="input-small"
+			size="40"
+			default="8"
+			label="COM_SIMPLECALENDAR_IMPORT_EVENT_CATEGORY_LABEL"
+		/>
+		
+		<field
+			name="latlon"
+			type="text"
+			class="input-small"
+			size="40"
+			default="9"
+			label="COM_SIMPLECALENDAR_IMPORT_EVENT_LATLON_LABEL"
+		/>
+	</fieldset>
+	</fields>
+</form>

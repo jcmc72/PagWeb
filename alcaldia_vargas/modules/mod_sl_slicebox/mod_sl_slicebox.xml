@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2013 Skyline Software (http://extstore.com). All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+-->
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>Skyline SliceBox Slider</name>
+	<author></author>
+	<creationDate>December 2012</creationDate>
+	<copyright>Copyright (c) 2013 Skyline. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@extstore.com</authorEmail>
+	<authorUrl>http://extstore.com</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[
+		SliceBox Slider module for Joomla 3.0
+		<br /><br />
+		Developed by Skyline Software (<a target="_blank" href="http://extstore.com">http://extstore.com</a>).
+	]]>
+	</description>
+
+	<files>
+		<filename module="mod_sl_slicebox">mod_sl_slicebox.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>fields</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<media folder="media" destination="mod_sl_slicebox">
+		<folder>css</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+
+	<languages>
+		<language tag="en-GB">en-GB.mod_sl_slicebox.ini</language>
+		<language tag="en-GB">en-GB.mod_sl_slicebox.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="slides_manager" addfieldpath="/modules/mod_sl_slicebox/fields">
+				<field
+					name="slides"
+					type="slides"
+					multiple="true"
+				/>
+			</fieldset>
+
+			<fieldset name="slider">
+				<field
+					name="orientation"
+					type="list"
+					default="r"
+					label="MOD_SL_SLICEBOX_ORIENTATION_LABEL"
+					description="MOD_SL_SLICEBOX_ORIENTATION_DESC"
+				>
+					<option value="v">MOD_SL_SLICEBOX_ORIENTATION_VERTICAL</option>
+					<option value="h">MOD_SL_SLICEBOX_ORIENTATION_HORIZONTAL</option>
+					<option value="r">MOD_SL_SLICEBOX_ORIENTATION_RANDOM</option>
+				</field>
+
+				<field
+					name="cuboidsCount"
+					type="text"
+					label="MOD_SL_SLICEBOX_CUBOIDSCOUNT_LABEL"
+					description="MOD_SL_SLICEBOX_CUBOIDSCOUNT_DESC"
+					default="5"
+				/>
+
+				<field
+					name="cuboidsRandom"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="MOD_SL_SLICEBOX_CUBOIDSRANDOM_LABEL"
+					description="MOD_SL_SLICEBOX_CUBOIDSRANDOM_DESC"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field
+					name="speed"
+					type="text"
+					label="MOD_SL_SLICEBOX_SPEED_LABEL"
+					description="MOD_SL_SLICEBOX_SPEED_DESC"
+					default="600"
+				/>
+
+				<field
+					name="interval"
+					type="text"
+					label="MOD_SL_SLICEBOX_INTERVAL_LABEL"
+					description="MOD_SL_SLICEBOX_INTERVAL_DESC"
+					default="5000"
+				/>
+
+				<field
+					name="textColor"
+					type="text"
+					label="MOD_SL_SLICEBOX_TEXTCOLOR_LABEL"
+					description="MOD_SL_SLICEBOX_TEXTCOLOR_DESC"
+					default="#fff"
+				/>
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+				/>
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+				>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+				/>
+
+				<field
+					name="customCss"
+					type="textarea"
+					rows="5"
+					label="MOD_SL_SLICEBOX_CUSTOMCSS_LABEL"
+					description="MOD_SL_SLICEBOX_CUSTOMCSS_DESC"
+				/>
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static"
+				>
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,5 @@
+#dailyfullscreen {
+	background: none repeat scroll 0 0 rgba(255,255,255,0.85);
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#ffffff', EndColorStr='#ffffff');
+	color:#000000;
+}

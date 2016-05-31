@@ -1,0 +1,540 @@
+<config>
+	<fieldset name="formats"
+		label="COM_SIMPLECALENDAR_CONFIG_TAB_DATETIME"
+		description="COM_SIMPLECALENDAR_CONFIG_TAB_DATETIME_DESC">
+		
+		<field
+			name="backend_list_date_format"
+			type="text"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_BACKEND_LIST_DATE_FORMAT_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_BACKEND_LIST_DATE_FORMAT_DESC" 
+			default="d F Y"
+			required="true" 
+			class="input-small" />
+			
+		<field
+			name="date_short_format"
+			type="text"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_DATE_FORMAT_SHORT_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_DATE_FORMAT_SHORT_DESC" 
+			default="d.m"
+			required="true"
+			class="input-small" />
+			
+		<field
+			name="date_long_format"
+			type="text"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_DATE_FORMAT_LONG_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_DATE_FORMAT_LONG_DESC" 
+			default="d.m.Y" 
+			required="true"
+			class="input-small" />
+			
+		<field
+			name="time_format"
+			type="text"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_TIME_FORMAT_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_TIME_FORMAT_LABEL_DESC" 
+			default="H:i" 
+			required="true"
+			class="input-small"  />
+			
+		<field
+			name="use_24h"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_USE_24H_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_USE_24H_DESC">
+			<option
+				value="0">COM_SIMPLECALENDAR_CONFIG_FIELD_USE_24H_12H</option>
+			<option
+				value="1">COM_SIMPLECALENDAR_CONFIG_FIELD_USE_24H_24H</option>
+		</field>
+		
+		<field name="minute_split" type="list"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_DATETIME_MINUTE_SPLIT_LABEL" 
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_DATETIME_MINUTE_SPLIT_DESC"
+			default="4"
+		>
+			<option value="2">COM_SIMPLECALENDAR_CONFIG_FIELD_DATETIME_MINUTE_SPLIT_2</option>
+			<option value="4">COM_SIMPLECALENDAR_CONFIG_FIELD_DATETIME_MINUTE_SPLIT_4</option>
+			<option value="6">COM_SIMPLECALENDAR_CONFIG_FIELD_DATETIME_MINUTE_SPLIT_6</option>
+			<option value="12">COM_SIMPLECALENDAR_CONFIG_FIELD_DATETIME_MINUTE_SPLIT_12</option>
+			<option value="60">COM_SIMPLECALENDAR_CONFIG_FIELD_DATETIME_MINUTE_SPLIT_60</option>
+		</field>
+		<field
+			name="vcal_encoding"
+			type="text"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_VCAL_ENCODING_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_VCAL_ENCODING_DESC" 
+			default="UTF-8"
+			class="input-small"  />
+	</fieldset>
+	<fieldset name="layout"
+		label="COM_SIMPLECALENDAR_CONFIG_TAB_LAYOUT"
+		addfieldpath="/administrator/components/com_simplecalendar/models/fields"
+		>
+		<field name="list_style"
+			type="list"
+			default="list"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_LIST_STYLE_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_LIST_STYLE_DESC"
+		>
+			<option value="list">COM_SIMPLECALENDAR_CONFIG_LIST_STYLE_LIST_DESC</option>
+			<option value="items">COM_SIMPLECALENDAR_CONFIG_LIST_STYLE_ITEMS_DESC</option>
+		</field>
+		<field name="period"
+			type="list"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_PERIOD_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_PERIOD_DESC"
+		>
+			<option value="0">COM_SIMPLECALENDAR_SIDEBAR_SELECT_PERIOD_ALL</option>
+			<option value="1">COM_SIMPLECALENDAR_SIDEBAR_SELECT_PERIOD_UPCOMING</option>
+			<option value="2">COM_SIMPLECALENDAR_SIDEBAR_SELECT_PERIOD_PAST</option>
+			<option value="-1">COM_SIMPLECALENDAR_SIDEBAR_SELECT_PERIOD_ARCHIVED_DESC</option>
+			<option value="3">COM_SIMPLECALENDAR_SIDEBAR_SELECT_PERIOD_UPCOMING_FEATURED</option>
+			<option value="4">COM_SIMPLECALENDAR_SIDEBAR_SELECT_PERIOD_PAST_FEATURED</option>
+		</field>
+		<field name="sort"
+			type="list"
+			default="asc"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SORT_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_SORT_DESC"
+		>
+			<option value="asc">COM_SIMPLECALENDAR_CONFIG_FIELD_SORT_ASC_DESC</option>
+			<option value="desc">COM_SIMPLECALENDAR_CONFIG_FIELD_SORT_DESC_DESC</option>
+		</field>
+		<field
+			name="spacer1"
+			type="spacer"
+			hr="true"
+		/>
+		<field name="show_pagination" type="list"
+			default="2"
+			description="JGLOBAL_PAGINATION_DESC"
+			label="JGLOBAL_PAGINATION_LABEL"
+		>
+
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+			<option value="2">JGLOBAL_AUTO</option>
+		</field>
+		<field name="show_pagination_limit" type="radio"
+			default="1"
+			class="btn-group"
+			description="JGLOBAL_DISPLAY_SELECT_DESC"
+			label="JGLOBAL_DISPLAY_SELECT_LABEL"
+		>
+
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field
+			name="show_pagination_results"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="JGLOBAL_PAGINATION_RESULTS_LABEL"
+			description="JGLOBAL_PAGINATION_RESULTS_DESC"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="filter_field"
+			type="list"
+			default="hide"
+			label="JGLOBAL_FILTER_FIELD_LABEL"
+			description="JGLOBAL_FILTER_FIELD_DESC">
+				<option value="hide">JHIDE</option>
+				<option value="show">JSHOW</option>
+		</field>
+		<field name="show_subcat_desc"
+			type="radio"
+			class="btn-group"
+			label="JGLOBAL_SHOW_SUBCATEGORIES_DESCRIPTION_LABEL"
+			description="JGLOBAL_SHOW_SUBCATEGORIES_DESCRIPTION_DESC"
+			default="1"
+			>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+		</field>
+		<field name="show_subcategory_content" 
+			type="radio"
+			class="btn-group"
+			default="0"
+			description=""
+			label="JGLOBAL_SHOW_SUBCATEGORY_CONTENT_LABEL"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field
+			name="spacer2"
+			type="spacer"
+			hr="true"
+		/>
+		
+		<field name="frontend_link_color" type="colorpick"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_FRONTEND_LINK_COLOR_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_FRONTEND_LINK_COLOR_DESC" 
+			default="B8CDDC" required="true" />
+			
+		<field name="intro_text" type="textarea" class="inputbox"
+			rows="5" cols="60" label="COM_SIMPLECALENDAR_CONFIG_FIELD_INTRO_TEXT_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_INTRO_TEXT_DESC" />
+			
+		<field
+			name="show_headers"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_HEADERS_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_HEADERS_DESC">
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		
+		<field name="customfield1_label" type="text"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_CUSTOMFIELD1_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_CUSTOMFIELD1_DESC" />
+		
+		<field name="customfield2_label" type="text"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_CUSTOMFIELD2_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_CUSTOMFIELD2_DESC" />
+			
+		<field name="currency" type="text"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_CURRENCY_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_CURRENCY_DESC"
+			default="$"
+			class="input-small"
+		/>
+		
+		<field
+			name="show_print_icon_list"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_PRINT_ICON_LABEL" >
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		
+		<field
+			name="show_vcal_icon_list"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_VCAL_ICON_LABEL" >
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+					
+	</fieldset>
+	<fieldset name="columns" label="COM_SIMPLECALENDAR_CONFIG_TAB_COLUMNS">
+		<field 
+			name="columns" 
+			type="columns" 
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_FRONTEND_COLUMNS_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_FRONTEND_COLUMNS_DESC"
+			default="[{&quot;colname&quot;:&quot;name&quot;,&quot;cssclass&quot;:&quot;&quot;,&quot;style&quot;:&quot;&quot;,&quot;caption&quot;:&quot;Name&quot;},{&quot;colname&quot;:&quot;venue&quot;,&quot;cssclass&quot;:&quot;hidden-phone&quot;,&quot;style&quot;:&quot;&quot;,&quot;caption&quot;:&quot;Venue&quot;},{&quot;colname&quot;:&quot;date&quot;,&quot;cssclass&quot;:&quot;&quot;,&quot;style&quot;:&quot;&quot;,&quot;caption&quot;:&quot;Date&quot;}]"
+			required="true" 
+		/>
+	</fieldset>	
+	
+	<fieldset name="event" label="COM_SIMPLECALENDAR_CONFIG_TAB_EVENT_VIEW">
+		<field
+			name="show_info_container"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_INFO_CONTAINER_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_INFO_CONTAINER_DESC">
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		<field
+			name="show_category"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_CATEGORY_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_CATEGORY_DESC">
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		<field
+			name="show_created"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_CREATED_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_CREATED_DESC">
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		<field
+			name="show_modified"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_MODIFIED_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_MODIFIED_DESC">
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		<field
+			name="show_username"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_USERNAME_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_USERNAME_DESC">
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		<field
+			name="show_hits"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_HITS_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_HITS_DESC">
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		<field
+			name="spacer1"
+			type="spacer"
+			hr="true"
+		/>
+		<field
+			name="show_social_buttons"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_SOCIAL_BUTTONS_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_SOCIAL_BUTTONS_DESC">
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		<field
+			name="show_twitter"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_TWITTER_BUTTON_LABEL" >
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		<field
+			name="show_gplus"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_GPLUS_BUTTON_LABEL" >
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		<field
+			name="show_facebook"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_FACEBOOK_BUTTON_LABEL" >
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		<field
+			name="spacer1"
+			type="spacer"
+			hr="true"
+		/>
+		<field
+			name="show_print_icon"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_PRINT_ICON_LABEL" >
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		<field
+			name="show_mail_icon"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_MAIL_ICON_LABEL" 
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_MAIL_ICON_DESC"
+		>
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		<field
+			name="show_vcal_icon"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_SHOW_VCAL_ICON_LABEL" >
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+	</fieldset>	
+	<fieldset name="gmap"
+		label="COM_SIMPLECALENDAR_CONFIG_TAB_GMAP"
+		addfieldpath="/administrator/components/com_simplecalendar/models/fields"
+		>
+		<field
+			name="use_gmap"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_USE_GMAP_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_USE_GMAP_DESC">
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		
+		<field
+			name="gmap_std_latlon"
+			type="gmap"
+			class="inside" 
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_GMAP_STD_LATLON_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_GMAP_STD_LATLON_DESC" 
+			default="46,9" />
+		
+		<field name="gmap_zoom" type="list"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_GMAP_ZOOM_LABEL" 
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_GMAP_ZOOM_DESC"
+			default="12"
+		>
+			<option value="0">0</option>
+			<option value="4">4</option>
+			<option value="8">8</option>
+			<option value="10">10</option>
+			<option value="12">12</option>
+			<option value="14">14</option>
+			<option value="18">18</option>
+			<option value="21">21</option>
+		</field>
+	</fieldset>
+	
+	<fieldset name="email"
+		label="COM_SIMPLECALENDAR_CONFIG_TAB_EMAIL"
+		addfieldpath="/administrator/components/com_simplecalendar/models/fields"
+	>
+		<field name="use_frontend_submission_email"  type="radio" class="btn-group"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_USE_FRONTEND_SUBMISSION_EMAIL_LABEL" 
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_USE_FRONTEND_SUBMISSION_EMAIL_DESC"
+			default="0"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field name="send_notifications_to" type="email" class="inputbox"
+			size="64"  label="COM_SIMPLECALENDAR_CONFIG_FIELD_SEND_NOTIFICATIONS_TO_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_SEND_NOTIFICATIONS_TO_DESC" 
+			validate="email"  />
+	</fieldset>
+	
+	<fieldset name="antispam" label="COM_SIMPLECALENDAR_CONFIG_TAB_ANTISPAM">
+	
+		<field name="frontend_approve"  type="radio" class="btn-group"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_FRONTEND_APPROVE_LABEL" 
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_FRONTEND_APPROVE_DESC"
+			default="0"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field
+			name="captcha"
+			type="plugins"
+			folder="captcha"
+			default=""
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_CAPTCHA_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_CAPTCHA_DESC"
+			filter="cmd" 
+		>
+			<option
+				value="">JOPTION_USE_DEFAULT</option>
+			<option
+				value="0">JOPTION_DO_NOT_USE</option>
+		</field>
+	</fieldset>
+	
+	<fieldset name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+	>
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			filter="rules"
+			validate="rules"
+			component="com_simplecalendar"
+			section="component"
+		/>
+	</fieldset>
+	
+	<fieldset name="information" label="COM_SIMPLECALENDAR_CONFIG_TAB_INFO"
+		addfieldpath="/administrator/components/com_simplecalendar/models/fields"
+	>
+		<field 
+			name="infobox"
+			type="info"
+			label=""
+			/>
+		<field
+			name="validation_key_domain"
+			type="text"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_BACKEND_VALIDATION_KEY_DOMAIN_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_BACKEND_VALIDATION_KEY_DOMAIN_DESC"
+		 />
+		<field
+			name="validation_key"
+			type="text"
+			label="COM_SIMPLECALENDAR_CONFIG_FIELD_BACKEND_VALIDATION_KEY_LABEL"
+			description="COM_SIMPLECALENDAR_CONFIG_FIELD_BACKEND_VALIDATION_KEY_DESC"
+		 />
+	</fieldset>
+</config>
